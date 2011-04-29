@@ -1,0 +1,37 @@
+<div id="stylized" class="myform">
+<h1>Create New Book</h1>
+<p>Add a new book to library</p>
+<% form_for(@book) do |f| %>
+	
+	<%= f.error_messages %>
+
+<table>  
+  <tr> 
+    <td><%= f.label :title %></td>
+    <td><%= f.text_field :title %></td>
+  </tr>
+  
+  <tr>
+   <td> <%= f.label :publisher_id %></td>
+   <td> <%= f.select :publisher_id, Publisher.all.map {|d| [d.name, d.id]} %></td>
+  </tr>
+
+  <tr>
+   <td> <%= f.label :author_id %></td>
+   <td> <%= f.collection_select(:author_ids, Author.all, :id, :first_name,{}, {:multiple => :multiple}) %></td>
+   </tr>  
+    
+   <tr>
+   	<td>&nbsp;</td>
+    <td  align="center" ><%= f.submit 'Create' %></td>
+	</tr>
+	
+</table>
+	<div class="spacer"></div>
+  
+<% end %>
+</div>
+<br>
+<div float ="bottom">
+<%= link_to 'Back', books_path %>
+</div>

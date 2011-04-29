@@ -1,0 +1,16 @@
+Assignment 3 Due 11:59PM Monday June 28th
+
+In Assignment 2 you wrote a console application. You will create a 
+Rails application for the same here (you are not required to copy or
+reuse code from that assignment. Feel free to create fresh code here).
+
+Your code should have the following:
+
+Good unit and functional tests.
+High coverage
+User should be able to view books when they visit your application url
+(without providing any controller name - so simply visiting http://localhost:3000
+should show books list).
+User should be able to click on the link to publisher to view the publisher information.
+User should be able to click on author name to view all books created by that author.
+In other words, make it intuitive for the user to use your application.

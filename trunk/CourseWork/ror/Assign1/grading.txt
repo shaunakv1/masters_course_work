@@ -1,0 +1,8 @@
+Total [100]: 80
+
+Code works [50]:
+Output presented in sorted order [10]:
+Code quality [10]:
+Error handling for network connection [10]: -10
+Error handling for invalid woeid [10]: -10
+Other observations/concerns [10]:

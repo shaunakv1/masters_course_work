@@ -1,0 +1,9 @@
+<ol>
+    <% @books.each do |book| %>
+    
+     <li><%= link_to "#{book.title}", book %></li>
+    
+    <% end %>
+</ol>
+
+<%= link_to 'Back', root_path %>

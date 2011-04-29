@@ -1,0 +1,8 @@
+Total [100]: 100
+
+Code works [40]:
+Code and test quality  [20]: 
+Test coverage [20]: 
+Root url shows list of books [5]:
+View all books by an author [5]:
+Other observations/concerns [10]:

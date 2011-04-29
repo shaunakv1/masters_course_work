@@ -1,0 +1,61 @@
+<center>
+<table border=2 width=100% cellspacing=5 cellpadding=8  cols=3>
+<tr>
+	<td rowspan=2 valign="top" align ="left">
+			<h2>All Books</h2>
+			<%=h flash[:books_status]%>
+			<ol>
+			<% @books.each do |book| %>
+				<li><%= link_to "#{book.title}", book %></li>
+		  	<% end %>
+			</ol>
+	</td>
+	
+	<td valign="top" align ="left"> 
+		<h2>Search By Authors</h2>
+		<%=h flash[:authors_status]%>
+		<ul>
+			<% @authors.each do |author| %>
+			<li><%= link_to "#{author.display_name}", show_books_of_author_path(author) %></li>
+		  	<% end %>
+		</ul>
+	</td>
+	
+	<td valign="top" align ="left"> 
+		<h2>Publishers</h2>
+		<%=h flash[:publishers_status]%>
+		<ul>
+			<% @publishers.each do |publisher| %>
+			<li><%= link_to "#{publisher.name}", show_books_of_publisher_path(publisher) %></li>
+		  	<% end %>
+		</ul>
+	</td>
+</tr>
+            
+<tr>
+	<td colspan = "2" valign="top" align ="left" ><h2>Manage Library</h2>
+	
+		<table cellspacing="5" cellpadding="5">
+	   
+		    <tr>
+		        <td><b>Books:</b></td>
+		        <td><%= link_to 'create', new_book_path %></td>
+				<td><%= link_to 'modify', books_path %></td>				        
+		    </tr>
+			<tr>
+		        <td<b>Authors:</b> </td>
+				<td><%= link_to 'create', new_author_path %></td>
+				<td><%= link_to 'modify', authors_path %></td>		    
+		    </tr>
+		    <tr>
+		        <td><b>Publishers:</b></td>
+				<td><%= link_to 'create', new_publisher_path %></td>
+		        <td><%= link_to 'modify', publishers_path %></td>		        
+		    </tr>
+			
+		</table>
+		
+	</td>
+	
+</tr>
+</table></center>
