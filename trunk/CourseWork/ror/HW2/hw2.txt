@@ -1,0 +1,29 @@
+HW2. Due by 11:59PM on Friday June 18
+Write a test class that will dynamically create test methods
+for data given in testdata.dat. The file testdata.dat
+has a few rows of test data. Each row has a year and
+a true if the year is leap, false otherwise (note:
+there is an error in the test data, it incorrectly states that
+year 2000 is not a leap year when it is—this is intentional).
+
+The code you write here has the following requirements:
+Do not use send.
+Do not manually write one test per test data, you need to synthesize tests 
+instead.
+The tests you synthesize must indicate failure by their name, for
+example, when test for year 2000 fails, the error will look as shown below:
+=begin
+Loaded suite C:/workarea/leap_year_test
+Started
+...F......
+Finished in 0.016 seconds.
+
+  1) Failure:
+test_is_leap_2000(LeapYearTest) [C:/workarea/leap_year_test.rb:30]:
+<false> expected but was
+<true>.
+
+10 tests, 10 assertions, 1 failures, 0 errors
+=end
+
+keep the test file and the lear_year.rb in the same directory for this Homework.

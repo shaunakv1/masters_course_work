@@ -1,0 +1,4 @@
+Total [10]: 9
+
+Mentions principles including OCP [5]: -1
+Mentions patterns and explains [5]:

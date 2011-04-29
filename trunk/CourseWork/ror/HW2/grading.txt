@@ -1,0 +1,6 @@
+Total [10]: 10
+
+Tests work as expected [5]:
+Code quality, etc. [5]:
+
+Nice job.

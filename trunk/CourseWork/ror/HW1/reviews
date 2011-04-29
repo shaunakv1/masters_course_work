@@ -1,0 +1,17 @@
+Unit tests I originally provided pass [2]:
+Code quality [2]:
+if something
+  true
+else
+  false
+
+should be written as
+
+something
+(you can get rid of the if and else)
+
+Unit tests I have now provided pass [6]: -0.8
+ [Each test carries .4 points]
+The other 3 failures are due to ArgumentError vs. RuntimeError.
+
+Floor of Total [10]: 9
