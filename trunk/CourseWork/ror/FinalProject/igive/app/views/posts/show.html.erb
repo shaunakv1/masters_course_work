@@ -1,0 +1,27 @@
+<div id = "stylized" class = "myform">
+<h1>Post Details</h1>
+<p>
+  <b>Item:</b> 
+  <%=h @post.title %><br>
+
+  <b>Description:</b>
+  <%=h @post.description %><br>
+
+  <b>Key Words:</b>
+  <%=h @post.tag %><br>
+
+  <b>Posted By:</b>
+  <%=h @post.user.name %><br>
+  
+  <b>Status:</b>
+  <%=h @post.dib_status %><br>
+  
+</p>
+<h1>Conversation about this Item</h1>
+
+<p>
+<% @post.messages.each do |message| %>
+<b><%=h message.who_said(session[:user_id]) %>:</b> <%=h message.body %><br>
+<% end %>
+</p>
+</div>

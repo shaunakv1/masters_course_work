@@ -1,0 +1,23 @@
+Total [50]: 49
+
+Presentation [10]: 10
+Features coverage [10]: 9
+Elegance [10]: 10
+Error handling [10]: 10
+Q & A [10]: 10
+
+Showing posts and recent posts showing up
+on the other users automatically.
+
+Sends a default (not a specific) message upon
+placing a dib.
+
+Messages don't clean up right away.
+
+Showing dibs and withdraw of those as well.
+
+Autocomplete not integrated yet.
+
+Validations implemented.
+
+Showing tests and rcov.

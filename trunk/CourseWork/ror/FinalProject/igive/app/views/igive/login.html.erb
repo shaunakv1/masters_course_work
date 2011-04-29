@@ -1,0 +1,47 @@
+	<% if flash[:succ_notice] %>
+    <table align = "center">
+	    <tr>
+	        <td align = "center">  
+				<div style="font-family:'Trebuchet MS';background :#ffff80 ;color:#669; font-size:14px;">
+            <%= flash[:succ_notice] %>
+			</div>
+			</td>
+		</tr>
+      </table>
+<% end %>
+
+<div>
+	<div id="stylized" class="myform">
+		<%= form_tag :action=> 'authenticate' -%>
+		<h1>Login</h1>
+		<p>With your username and password</p>
+		<table>
+		    <tr>
+		        <td>  User name:</td>
+		        <td> <%= text_field("userform", "name",:size=>"20" ) %></td>
+		    </tr>
+		    <tr>
+		        <td>Password:</td>
+		        <td><%= password_field("userform", "password",:size=>"20" ) %></td>
+		    </tr>
+			<% if flash[:notice] %>
+			<tr>
+			    <td></td>
+			    <td>
+			      <div style="font-family:'Trebuchet MS'; color:#FF0000; font-size:14px;">
+			            <%= flash[:notice] %>
+			      </div>
+			    </td>
+			</tr>
+			<% end %>
+		    
+			<tr>
+		        <td>&nbsp;</td>
+				<td><%= submit_tag 'Login' %></td>
+		    </tr>
+		</table>
+		
+		<h1>Not a Member yet?</h1>
+		<%= link_to 'Join Now!', new_user_path %>
+	</div>
+</div>

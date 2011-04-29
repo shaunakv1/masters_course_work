@@ -1,0 +1,27 @@
+<div id = "stylized" class = "myform">
+	
+<h1>Post new Item</h1>
+<p>What will you like to give away today?</p>
+
+<table>
+<% form_for(@post) do |f| %>
+  
+  <tr><td colspan = "2"><%= f.error_messages %></td></tr>
+  
+    <tr><td><%= f.label :title %></td>
+    <td><%= f.text_field :title %></td></tr>
+  
+  
+  <tr>  <td valign="top"><%= f.label :description %></td>
+    <td><%= f.text_area :description ,:size => "20x5" %></td></tr>
+  
+    <tr><td><%= f.label :tag %></td>
+    <td><%= f.text_field :tag %></td></tr>
+  
+    <tr><td><%= f.hidden_field :user_id %></td>
+    <td><%= f.submit 'Create' %></td></tr>
+	
+  
+<% end %>
+</table>
+</div>

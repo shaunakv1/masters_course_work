@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: Ruby      
+  description: new book
+  tag: book
+  user: one
+  dibber: 0
+  exchanged: false
+
+two:
+  title: Guitar
+  description: old Guitar without strings
+  tag: music
+  user: two
+  dibber: 0
+  exchanged: false
+
+dibbed:
+  title: Mac
+  description: Brand New
+  tag: electronic
+  user: two
+  dibber: 1
+  exchanged: false

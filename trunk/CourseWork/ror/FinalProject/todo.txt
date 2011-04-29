@@ -1,0 +1,74 @@
+1. write test case for history
+
+1. write test case for history
+2.posts mei date format
+3. inbox mei bracket mein number of unread messages 
+	marking read and unread
+	inbox format - from subject date and click to view wen clicking mark as read
+4. Search by tag
+5. Search tab ka UI
+6. history k UI mei -> show posted and show received
+Done :- 7. show setting -> modify use rrpoperties
+
+8. home page pe notification ka UI accha karna hai
+ 		items u have posted
+		items u have received
+9. Once the item is exchanged remove it from the search list
+Done :- 10. Change setting to account information
+11. A user can at any time withdraw an item. If the item is withdrawn, it is removed from the application.
+12. rename tag to keywords
+13 6. A user can place dibs on any item. At this time, the application accepts
+a message from the user and stores it for the offerer to review
+14. A user can place or remove dibs on multiple items.
+
+15. An email is sent anytime a message is ready for any user to view.
+9. A user can review the history of all items they have placed for give away
+or they got from any offered.
+10. A users email address or any personal information (other than their
+name) is never revealed to any other user.
+
+
+FUNCTIONALITY
+top
+	
+
+13 6. A user can place dibs on any item. At this time, the application accepts
+		a message from the user and stores it for the offerer to review
+
+15. An email is sent anytime a message is ready for any user to view. send message jaha call kiya hai waha e-mail bhi behjna hai
+
+9. A user can review the history of all items they have placed for give away
+	or they got from any offered.
+10. A users email address or any personal information (other than their
+name) is never revealed to any other user.
+
+
+done
+11. A user can at any time withdraw an item. If the item is withdrawn, it is removed from the application. 
+	put a withdraw button and give link toa a delete post.
+9. Once the item is exchanged remove it from the search list
+14. A user can place or remove dibs on multiple items.
+
+
+
+bottom
+1.marking read and unread - 
+4. Search by tag	
+
+
+10. A users email address or any personal information (other than their
+name) is never revealed to any other user.
+
+
+
+Syntax based
+2.posts mei date format
+3. inbox mei bracket mein number of unread messages 
+4.inbox format - from subject date and click to view wen clicking mark as read
+5. Search tab ka UI
+6. history k UI mei -> show posted and show received
+8. home page pe notification ka UI accha karna hai
+ 		items u have posted
+		items u have received
+12. rename tag to keywords
+

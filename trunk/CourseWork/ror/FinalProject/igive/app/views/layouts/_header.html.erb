@@ -1,0 +1,21 @@
+<div id="banner">
+	<table width=100% cellspacing=5 cellpadding=8 cols=2>
+	<tr>
+		<td valign="top" align = "left">
+			<h1>iGive</h1>
+			<h4>Find all you want!</h4>
+		</td>
+		
+		<td  valign="top" align= "right">
+			Welcome <strong><%=session[:user_id]%></strong>!
+			 <%= link_to "[Logout]",:controller => "igive", :action => "logout" %>		
+			<% form_tag :controller =>'posts' , :action => "list" do-%>
+			<h1><%= text_field(:searchform,:query,:size=>"15" ) %>
+			<%= submit_tag 'Search' %></h1>
+			<% end %>
+		
+		</td>
+	</tr>
+</table>
+</div>
+

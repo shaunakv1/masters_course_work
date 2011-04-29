@@ -1,0 +1,14 @@
+	
+<% form_remote_tag(:url => {:controller => 'messages',:action => 'reply'}, :update => "reply", :loading => "disable_button('rebutton')" ) do %>
+
+	<%= hidden_field :message,:sender_id %>
+  	<%= hidden_field :message,:user_id %>
+  	<%= hidden_field :message,:post_id %>
+	<label>Subject</label>
+	<%= text_field(:message,:subject) %>
+	<label>Message</label>
+	<%= text_area (:message, :body ,:size => "24x6") %>
+
+	<%= submit_tag 'Send' , :id => "rebutton" %>
+<% end %>
+
