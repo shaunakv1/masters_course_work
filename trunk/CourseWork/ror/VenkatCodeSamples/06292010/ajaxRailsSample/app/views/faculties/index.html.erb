@@ -1,0 +1,32 @@
+<%=  javascript_include_tag :defaults %>
+<h1>Listing faculties</h1>
+
+<%
+client_side_pulsate_code = "Effect.Pulsate($('facultiestable').rows[$('facultiestable').rows.length - 1])"
+%>
+
+<DIV id="facultiesholder">
+<%= render :partial => 'display_faculties', :locals => {:faculties => @faculties} %>
+</DIV>
+<hr />
+<h1>Would you like to add a faculty?</h1>
+
+<% remote_form_for(@faculty, :update => 'facultiesholder',
+   :complete => client_side_pulsate_code) do |f| %>
+  
+  <%= f.error_messages %>
+
+	<DIV id="nameinfo">
+  <p>
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </p>
+  <p>
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+  </DIV>
+<% end %>

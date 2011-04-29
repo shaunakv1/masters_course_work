@@ -1,0 +1,13 @@
+<p>
+  <b>First name:</b>
+  <%=h @faculty.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%=h @faculty.last_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_faculty_path(@faculty) %> |
+<%= link_to 'Back', faculties_path %>

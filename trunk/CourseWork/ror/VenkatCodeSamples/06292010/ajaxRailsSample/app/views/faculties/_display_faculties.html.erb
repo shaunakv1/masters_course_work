@@ -1,0 +1,16 @@
+<table id="facultiestable">
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+  </tr>
+
+<% faculties.each do |faculty| %>
+  <tr>
+    <td><%=h faculty.first_name %></td>
+    <td><%=h faculty.last_name %></td>
+    <td><%= link_to 'Show', faculty %></td>
+    <td><%= link_to 'Edit', edit_faculty_path(faculty) %></td>
+    <td><%= link_to 'Destroy', faculty, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
