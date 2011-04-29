@@ -1,0 +1,18 @@
+<p>
+  <b>Title:</b>
+  <%=h @book.title %>
+</p>
+
+<p>
+  <b>Publisher:</b>
+  <%= @book.publisher.name %>
+</p>
+
+<p>
+  <b>Author(s):</b>
+  <%=h @book.authors.map {|auth| auth.display_name}.join(',')%></br>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Delete', @book, :confirm => 'Are you sure?', :method => :delete %>|
+<%= link_to 'Back', root_path %>

@@ -1,0 +1,13 @@
+Assign1: Due 11:59PM Monday June 14
+
+Yahoo weather provides a way to find the temperature of various cities.
+Write a Ruby program that will read a given data file with woeids (a sample
+file is given), go out to Yahoo, and extract the temperature for each city. 
+Your program will then display (in alphabetical order of city/state) the city 
+name, state symbol, and the temperature value.
+
+The URL for Yahoo Weather service is
+
+http://weather.yahooapis.com/forecastrss?w=WOEID&u=f
+
+Replace the WOEID in the URL with the actual woeid value.

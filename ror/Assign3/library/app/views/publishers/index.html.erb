@@ -1,0 +1,24 @@
+<h1>Listing publishers</h1>
+
+<table id="blue-table">
+  <thead>
+  <tr align = "left">
+    <th scope = "col">Name</th>
+	<th scope = "Edit">Edit</th>
+	<th scope = "Delete">Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+<% @publishers.each do |publisher| %>
+  <tr>
+    <td><%=h publisher.name %></td>
+    <td><%= link_to 'Edit', edit_publisher_path(publisher) %></td>
+    <td><%= link_to 'Delete', publisher, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+
+<br />
+
+<%= link_to 'Back', root_path %>

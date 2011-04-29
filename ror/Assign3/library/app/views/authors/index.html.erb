@@ -1,0 +1,27 @@
+<h1>Listing authors</h1>
+
+<table id="blue-table">
+  <thead>
+  <tr align = "left">    
+    <th scope ='col'>First name</th>
+    <th scope ='col'>Last name</th>
+	<th scope ='col'>Books in Library</th>
+	<th scope = "Edit">Name</th>
+	<th scope = "Delete">Name</th>
+  </tr>
+  </thead>
+  <tbody>
+	<% @authors.each do |author| %>
+	  <tr>
+	    <td><%=h author.first_name %></td>
+	    <td><%=h author.last_name %></td>
+		<td><%=h author.books.size %></td>
+	    <td><%= link_to 'Edit', edit_author_path(author) %></td>
+	    <td><%= link_to 'Destroy', author, :confirm => 'Are you sure?', :method => :delete %></td>
+	  </tr>
+	<% end %>
+	</tbody>
+</table>
+
+<br />
+<%= link_to 'Back', root_path %>

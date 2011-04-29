@@ -1,0 +1,28 @@
+<h1>Listing books</h1>
+
+<table id="blue-table" width=50% cellspacing=3 cellpadding=3>
+  <thead>
+	  <tr align="left">
+	    <th scope="col">Title</th>
+	    <th scope="col">Publisher</th>
+		<th scope="col">Author(s)</th>
+		<th scope="col">Edit</th>
+		<th scope="col">Delete</th>
+	  </tr>
+  </thead>
+<tbody>
+	<% @books.each do |book| %>
+	  <tr align="left">
+	    <td><%=h book.title %></td>
+	    <td><%=h book.publisher.name%></td>
+		<td><%=h book.authors.map{|auth| auth.display_name}.join(' , ') %></td>
+		<td><%= link_to 'Edit', edit_book_path(book) %></td>
+	    <td><%= link_to 'Delete', book, :confirm => 'Are you sure?', :method => :delete %></td>
+	  </tr>
+	<% end %>
+</tbody>
+</table>
+
+<br />
+
+<%= link_to 'Back', root_path %>
