@@ -1,0 +1,27 @@
+06/11/10 06:39 AM CT
+
+Good work, simply ensure you have handled various things that can do 
+wrong.
+
+
+-----------------------------------------------------------------------
+
+06/10/10 06:43 AM CT
+
+Simple, eh?
+Ensure you have handle errors well.
+
+-----------------------------------------------------------------------
+
+06/05/10 04:16 AM CT
+
+Very good start. Did you notice one of the unit tests I had given fails.
+Can you try to fix that?
+
+-----------------------------------------------------------------------
+
+06/08/10 06:24 AM CT
+
+The solution looks clever. Can you make it simpler.
+
+-----------------------------------------------------------------------

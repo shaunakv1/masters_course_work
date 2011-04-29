@@ -1,0 +1,45 @@
+07/04/10 05:22 AM MT
+
+Check the coverage.
+
+Some initial run through the features look good.
+
+-----------------------------------------------------------------------
+
+07/01/10 05:52 AM CT
+
+Nice to see tests pass (and there are quite a few of those you have).
+Fairly good coverage, but take a look at one or two that have lesser
+than desired coverage.
+
+On launching the browser, I see a search. But no matter what I entered
+there, and clicked on search, nothing happened. Do I have to login before
+using search. If so, then search should not be here. If not, a better
+response than being quite to search request is needed.
+
+Once I register, it would be nice to see something like, "Your account was
+created successfully, please login now." instead of "User was successfully created."
+
+Title must contain only alphabets is not a good idea. What if I want to give away
+a IDE with a particular version number on it (like IDEA 9.1).
+
+"Post was successfully created" needs to be something better. Why not instead
+take me to home page where you show the most recent posted item on the top or
+highlighted... That would be better, isn't it.
+
+No, you don't want to display the password in the Account Information page!
+
+History page displays funny object details!
+
+Very nice work, the above are suggestions to improve, but I really like what
+you have done so far.
+
+-----------------------------------------------------------------------
+
+06/30/10 05:09 AM CT
+
+Some initial comments. Remove the development database
+from the repository. Ensure rake test runs successfully (it is not
+right now).
+
+-----------------------------------------------------------------------

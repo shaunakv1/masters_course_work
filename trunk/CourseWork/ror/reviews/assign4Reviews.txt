@@ -1,0 +1,12 @@
+07/04/10 05:17 AM MT
+
+You are lacking test coverage on a few controllers.
+
+I clicked on create next to Publishers.
+Entered Pub1 for Name and got the message:
+
+"Cannot create publisher because name was blank"
+
+displayed on the right!
+
+-----------------------------------------------------------------------

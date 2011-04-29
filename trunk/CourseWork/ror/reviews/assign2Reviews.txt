@@ -1,0 +1,48 @@
+06/20/10 06:34 AM MT
+
+Nice to see you have more tests.
+rake test gave an error, but running the test program directly 
+after that succeeded. Hope you will fix things so rake command
+will succeed soon.
+
+Remember to take care of validations.
+
+-----------------------------------------------------------------------
+
+06/19/10 05:21 AM MT
+
+Please keep the review request to one sentence or less, don't explain 
+anything in that email.
+
+You have addressed the relationship concern I had in the schema.
+
+-----------------------------------------------------------------------
+
+06/18/10 06:10 AM MT
+
+Looks reasonable so far (the schema concern I had in first review
+still persists here).
+
+-----------------------------------------------------------------------
+
+06/17/10 04:22 AM MT
+
+Unit test failed with 
+action_test.rb:2:in `require': no such file to load -- src/action (LoadError)
+	from action_test.rb:2
+
+
+-----------------------------------------------------------------------
+
+06/16/10 04:20 AM MT
+
+Create a good directory structure with src and tests.
+
+Looking at the schema, I see a limitation, but this will come to light
+as you create more test examples.
+
+I like your YML.
+
+Very nice start.
+
+-----------------------------------------------------------------------

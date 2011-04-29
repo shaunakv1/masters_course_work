@@ -1,0 +1,22 @@
+06/27/10 06:59 AM ET
+
+You may try to eliminate duplication between new and edit pages in the views.
+You may also try to eliminate duplication between the files in the layout
+(and across views of different controllers).
+
+Nice to see so many validations in place. Make sure you have unit tests for 
+each of them.
+
+-----------------------------------------------------------------------
+
+06/26/10 05:15 AM ET
+
+rake db:migrate was quiet.
+Nice to see 57 tests run.
+
+Nice work on the initial page displayed!
+You may want to remove duplications in the code (though you have
+used partials, you may want to check to ensure you've done it
+consistently, even across views of different controllers where possible).
+
+-----------------------------------------------------------------------
