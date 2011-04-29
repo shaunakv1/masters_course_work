@@ -1,0 +1,49 @@
+06/14/10 06:54 AM CT
+
+Give a blank space before and after = (and other operators).
+Is there a reason there is so much space between the name of the city
+and the comma in the output?
+
+-----------------------------------------------------------------------
+
+06/13/10 06:06 AM CT
+
+Your read_woeids_from_file is now not closing the file! Remember 
+last expression in each function (or closure) is returned automatically.
+So, revert to previous version of this function and see how you can
+apply this fact.
+
+-----------------------------------------------------------------------
+
+06/11/10 06:33 AM CT
+
+When you run the unit test, it should not spit output. It should be quite
+(and only report number of tests run) when everything worked well.
+
+read_woeids_from_file too much code here! Remove the variable and see
+what happens.
+
+Nice work.
+
+-----------------------------------------------------------------------
+
+06/10/10 06:26 AM CT
+
+Nice to see you have tests written.
+
+What if I change
+      while (woeid = file.gets) 
+        expected_woeids<<woeid
+      end
+
+to
+       expected_woeids = file.readlines
+
+Same in the main code, you can reduce the code quite a bit around
+the above.
+
+Instead of += can you use heredocs (or return multiple results)?
+
+Very nice start.
+
+-----------------------------------------------------------------------
