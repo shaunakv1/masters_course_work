@@ -1,0 +1,9 @@
+HW1: Due 11:59PM Friday June 11.
+Feel free to check in files as many times as you like until
+the deadline. You can ask review of your code anytime.
+Files outside the HW1 directory will not be used for grading.
+
+Write a Robot class that will learn maneuvering and be ready
+to exercise them. I have provided a sample code (in the form
+of unit tests) that shows an example of how I may use your Robot
+class.

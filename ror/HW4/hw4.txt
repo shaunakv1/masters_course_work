@@ -1,0 +1,58 @@
+HW4. Due by 11:59PM on Friday July 2
+
+What are some of the tools that will help you debug Ajax applications.
+What are their benefits or special features that set them apart
+from other tools. Provide references to tools and where you learn from 
+them.
+
+1. JavaScript Shell:
+	
+	Features and Advantages:
+		1. Command line interactive shell where its easy to try out JavaScript commands similar to irb in RUBY.
+		2. Integrates easily with firefox which enables you to do experiments on live pages if you please.
+		3. Its free to use.
+	
+2. Selenium
+	
+	Features and Advantages:
+		1. Mimicks User's actions on a web pages. It tests drives a web site as a real human user would do. 
+		2. Can record clicks, typing, and actions and play them back in browser when required to give out test results.
+		3. Selenium can also play back this recorded action in various browsers to generate comparative and compatibility results. 
+		4. Selenium grid feature lets you run these features across multiple servers to run them in parallel.
+
+3. JsUnit
+
+	Features and Advantages:
+		1. A Junit like unit testing framework made for JavaScript. 
+		2. Makes it easier for developers already familiar with Junit to quickly start testing JavaScript.
+		3. Runs the test in client-side (browser) environment.
+		4. Comes with platform for running tests on multiple browsers and Operating systems.
+
+4. FireBug:
+
+	Features and Advantages:
+		1. Its a easy to use Firefox extension that comes with the browser.
+		2. Allows you to easily find and fix JavaScript Issues in Ajax applications.
+		3. Classic code debugging features alike , break points, step-by step execution, monitor states of variables.
+		4. Log-Debugging feature allows developers to send messages from within the page itself. 
+		5. Monitor Network Activity: This feature allows developers to monitor the snippets of network traffic. 
+		6. Progress of each Ajax request can be observed and sent/received data can be inspected.
+		7. Its free to use
+		
+5.  Fiddler
+	
+	Features and Advantages:
+		1. Fiddler makes debugging easy logs every http and https requests made between  computer and the internet by acting as a transparent proxy. 
+		2. This log can be used to analyze the working and non-working part of the applications.
+		3. It also allows to set breakpoints for http requests and responses, to analyze and debug code line by line.
+		4. Fiddler can be used to ensure that the data being sent from and to the server are in correct format and contains correct data.
+		
+References:
+
+http://seleniumhq.org/		
+http://www.jsunit.net/
+http://ajaxian.com/archives/ajax-debugging-with-firebug
+http://weblogs.asp.net/dwahlin/archive/2007/07/17/list-of-ajax-automated-testing-and-debugging-tools.aspx
+http://www.developer.com/lang/jscript/article.php/3631066/Fiddler-Can-Make-Debugging-Easy.htm
+http://www.wrox.com/WileyCDA/Section/Ajax-Debugging-with-Microsoft-Fiddler.id-303210.html
+http://www.troubleshootingwiki.org/Debugging_for_AJAX_applications
