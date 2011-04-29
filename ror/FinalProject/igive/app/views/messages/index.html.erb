@@ -1,0 +1,40 @@
+<div id="messageleftcol">
+	<div id = "stylized" class = "inbox">
+	
+		<h1>Your Inbox</h1>
+		<p>Listing your Messages</p>
+		
+		<table id = "blue-table">
+		  <tr>
+		    <th>Message</th>
+		  </tr>
+		
+		<% @messages.each do |message| %>
+		  <tr>
+		    <td style=" font-size :10px">
+		     <strong><%=h message.sender_name %></strong>
+			 <% time = message.created_at %>
+			 <%=h time.strftime("%a %b #{time.day.ordinalize} %y")%> <br>
+			<%= link_to_remote "#{message.subject}" , :update => "message",:url => show_message_path(message) %>
+		    </td>
+		   </tr>
+		<% end %>
+		</table>
+
+
+
+	</div>
+</div>
+
+<div id="messagecontent">
+	<div id = "stylized" class = "myform">
+		<h1>Message</h1>
+		<p>Click on the message on left to view details </p>
+		<div id = "message"></div>
+	</div>
+</div>
+
+
+
+
+

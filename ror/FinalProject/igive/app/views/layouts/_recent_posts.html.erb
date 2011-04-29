@@ -1,0 +1,24 @@
+
+	<table id = "blue-table">
+		<thead>
+			<tr>
+				<th>Recent Posts<th>	
+			<tr>
+		</thead>
+		<% @recent_posts.each do |post| %>
+		  <tbody>
+		  <tr>
+		    <td style=" font-size : 10px ">
+		    <b><%=h post.title %></b> by
+		    <%=h post.user.name %> on
+			<% time = post.created_at %>
+		    <%=h time.strftime("%a %b #{time.day.ordinalize}")%>
+			<center>
+				<%= link_to 'Details', post %>|
+				<%= link_to 'Request', new_message_url ({:post_id => post.id})%>
+			</center>	
+			</td>
+		  </tr>
+		  </tbody>
+		<% end %>
+	</table>	

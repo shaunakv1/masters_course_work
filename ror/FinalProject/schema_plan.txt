@@ -1,0 +1,22 @@
+1. User (id, Name, Email, Password)
+2. Post (id, Title, Description, Tags , user_id, dibber , exchanged)
+3. Message(id, Subject, body , sender_id , user_id , read)
+4. History (id, Title, Description , user_id, action = posted/received)
+
+Relationships:
+
+User - one to many - Post
+User - one to many - Message
+User - one to many - History
+
+-- Line of thinking--
+1. No relationship between history and post because, irrispective of a post now exists in system or not, its history should exist in a users account
+2. Messages are related only to receiver and not sender, because after sending a message, sender has not right over it, the message belongs to receiver.
+3. Post will belong to creator and dibber is just the user_id of user who has placed a dib for it
+
+
+commands for quick use
+
+ruby script/generate scaffold Post title:string description:string tags:string user_id:integer dibber:integer exchanged:boolean
+
+	

@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: accepted
+  description: accepted
+  user_id: 1
+  receiver_id: 1
+  action: posted
+  post: dibbed
+
+two:
+  title: rejected
+  description: got rejected
+  user_id: 2
+  receiver_id: 1
+  action: received
+  post: one

@@ -1,0 +1,72 @@
+<script>
+
+	function highlight()
+	{
+		Effect.Pulsate($('newentry'));
+		Effect.Pulsate($('newdib'));
+	}
+	
+	
+function disable_button(ele_id)
+{
+	$(ele_id).disabled = true
+	$(ele_id).value = "sending reply"
+}
+	
+function enable_button()
+	{
+		$(ele_id).disabled = true
+	}	
+
+
+</script>
+
+<%=  render :partial => 'layouts/start' %>
+<body onload="highlight()">
+	
+	
+<div id="header">
+	<%=  render :partial => 'layouts/header' %>
+</div>
+
+<div id="leftcol">
+	<table id = "blue-table">
+		<tbody>
+			<tr><td align="right"><%= link_to "Home",:controller => "igive", :action => "home" %></td></tr>
+			<tr><td align="right"><%= link_to "#{@inbox_icon}",:controller => "messages", :action => "index" %></td></tr>
+			<tr><td align="right"><%= link_to "Pending dibs",pending_dibs_posts_path  %></td></tr>
+			<tr><td align="right"><%= link_to "Post",:controller => "posts", :action => "new" %></td></tr>
+			<tr><td align="right"><%= link_to "History",:controller => "histories", :action => "index" %></td></tr>
+			<tr><td align="right"><%= link_to "Account Information", :controller=> "users", :action => "edit" %></td></tr>
+		</tbody>
+	</table>	
+</div>
+
+<div id = "rightcol">
+<%=  render :partial => 'layouts/recent_posts' ,:locals => {:recent_posts => @recent_posts}%>
+</div>
+
+<%= periodically_call_remote(:url => populate_recent_posts_path, :frequency => '5', :update => 'rightcol')%>
+<%= periodically_call_remote(:url => clear_notifications_path, :frequency => '10', :update => 'notices')%>
+
+<div id="content">
+		<div id = "notices" align = "center">
+			<table id = "notice-table">
+				<tr><td><%= flash[:notice] %></td></tr>
+				<tr><td><%= flash[:pending_message] %></td></tr>
+				<tr><td><%= flash[:accepted_message] %></td></tr>
+				<tr><td><%= flash[:new_mail_message] %></td></tr>
+			</table>
+		</div>
+		
+	<%= yield %>
+</div>
+
+
+<!-- div id="footer">Footer Section</div -->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+<br><br><br>
+<h2>Search Items</h2>
+
+<%= form_tag :controller =>'posts' , :action => "list" -%>
+  	 <%= text_field("searchform", "query",:size=>"30" ) %>
+  <p>
+    <%= submit_tag 'Search' %>
+  </p>

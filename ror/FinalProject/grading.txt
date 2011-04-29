@@ -1,0 +1,12 @@
+Total [30]: 29
+
+Demo grading [15]: 15
+Feature completeness [3]: -1
+Seems to be no way for a item poster to send a reject or accept message
+(which there is a facility for the person requesting the item to send
+a message).
+
+Ease of use and esthetics [3]:
+Test coverage [3]:
+Quality of code [3]:
+Other concerns/issues [3]:

@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  subject: accepted
+  body: your dib got accepted
+  sender_id: 1
+  user: one
+  read: false
+
+two:
+  subject: rejected
+  body: your dib got rejected
+  sender_id: 1
+  user: two
+  read: false

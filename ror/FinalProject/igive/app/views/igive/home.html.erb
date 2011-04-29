@@ -1,0 +1,53 @@
+
+
+<div id = "posts" class = "post_list">
+	<h1>Your Posts</h1>
+	<p>Items you posted, but not yet exchanged. <b>Click item for Details</b> </p>
+
+<table id = "posts-table">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Status</th>
+    <th>Exchanged</th>
+	 <th>Withdraw</th>
+  </tr>
+ </thead>
+ <tbody>
+<% @posted_items.each do |post| %>
+  <tr id = <%=h @new_post_marker %> >
+    <td><%= link_to "#{post.title}", post %></td>
+    <td><%=h post.dib_status %></td>
+    <td><%=h post.exchanged %></td>
+    <td><%= link_to 'withdraw', post, :confirm => 'Are you sure?', :method => :delete %></td>
+ </tr>
+	  
+<% end %>
+</tbody>
+</table>
+</div>
+
+
+<div id = "posts" class = "post_list">
+	<h1>Your dibs </h1>
+	<p>Items you have dibbed but have not received yet.  <b>Click item for Details</b></p>
+
+<table id = "posts-table">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>withdraw</th>
+  </tr>
+ </thead>
+ <tbody>
+<% @dibbed_items.each do |post| %>
+  <tr id = <%=h @new_dib_marker %> >
+    <td><%= link_to "#{post.title}", post %></td>
+    <td><%= link_to 'withdraw', withdraw_dib_url(:id => post.id) %></td>
+
+	 </tr>
+<% end %>
+</tbody>
+</table>
+</div>
+

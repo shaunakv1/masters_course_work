@@ -1,0 +1,19 @@
+
+
+
+  <h1>
+  <%=h message.subject %>
+  </h1>
+
+
+<p>
+  <b>From:</b>
+  <%=h sender.name %>
+  <br> <br>
+  <b>Message:</b>
+  <%=h message.body %>
+</p>
+<div id = "reply">
+	<%= button_to_remote "Reply" , :update => "reply",:url => show_reply_box_path(message) %>
+	<br>
+</div>

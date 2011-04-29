@@ -1,0 +1,50 @@
+<div id = "posts" class = "post_list">
+	<h1>Received Items</h1>
+	<p>Items you received</p>
+
+	<table id = "posts-table">
+		  <thead>
+			  <tr>
+			    <th>Title</th>
+			    <th>Description</th>
+				<th>Received From</th>
+				<th>Received On</th>
+			  </tr>
+		 </thead>
+		 <tbody>
+		<% @histories_of_received.each do |history| %>
+			  <tr>
+			  	<td><%=h history.title %></td>
+			    <td><%=h history.description %></td>
+				<td><%=h history.user.name %></td>
+				<td style=" font-size :10px"><%=h history.created_at.strftime("%d %b %y")%> </td>
+			  </tr>
+			  
+		<% end %>
+		</tbody>
+	</table>
+</div>
+
+<div id = "posts" class = "post_list">
+	<h1>Posted Items</h1>
+	<p>Items you posted</p>
+	<table id = "posts-table">
+		  <thead>
+			  <tr>
+			    <th>Title</th>
+			    <th>Description</th>
+				<th>Posted On</th>
+			  </tr>
+		 </thead>
+		 <tbody>
+		<% @histories_of_posted.each do |history| %>
+			  <tr>
+			  	<td><%=h history.title %></td>
+			    <td><%=h history.description %></td>
+				<td style=" font-size :10px"><%=h history.created_at.strftime("%d %b %y")%> </td>
+			  </tr>
+			  
+		<% end %>
+		</tbody>
+	</table>
+</div>

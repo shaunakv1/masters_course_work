@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: Shaunak 
+  password: shawn
+  email: shaunakv1@gmail.com
+
+two:
+  name: Vasundhara
+  password: vasu
+  email: vasundharadsingh@gmail.com
+
+three:
+  id: 1
+  name: venkat
+  password: Venkat
+  email: shaunak.vairagare@yahoo.com

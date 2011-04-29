@@ -1,0 +1,56 @@
+Final project.
+
+You can check in code as many times as you like. You can ask for
+review at anytime. The files will be locked down at 11:59PM July 1st.
+The demo will be either on June 30th or July 1st.
+
+In this project you will build a web application using Ruby on Rails.
+The application will allow registered members to exchange or give away
+stuff. It simply brings people who have stuff to give away and people who're
+looking for stuff together. Here is a list of functionality expected:
+
+1. A user can register with the site by providing an email address, name, and password.
+
+2. A user can change name and password at any time after logging in.
+
+3. A user (offerer) can post an item for give away by providing a list of 
+keywords, and a description for the item.
+
+4. A user can at any time withdraw an item. If the item is withdrawn, it is removed from the application.
+
+5. A user can search (based on the keywords) items that are available.
+The user can read the descriptions.
+
+6. A user can place dibs on any item. At this time, the application accepts
+a message from the user and stores it for the offerer to review. A user can
+place or remove dibs on multiple items. An item can have at most one dibs on 
+it at any time.
+
+7. The offerer can then review the message, accept to give item away or 
+decline. If accepted, the item is marked as exchanged in the system and the 
+users take their discussion offline. This item will no longer be visible 
+in searches. If the user declines, a decline message is sent back
+to the person who requested and the dibs is removed. The offerer can also
+hold decision and exchange a few other messages with the person requesting.
+
+8. An email is sent anytime a message is ready for any user to view.
+
+9. A user can review the history of all items they have placed for give away
+or they got from any offered.
+
+10. A users email address or any personal information (other than their
+name) is never revealed to any other user. Whatever message is exchanged 
+between users is visible only to those users and not to other users.
+
+11. If you can think of more essential features, feel free to add them.
+
+Please feel free to use plugins for various features (like managing
+users, etc.).
+
+Your project will be evaluated based on
+(a) feature completeness
+(b) ease of use
+(c) esthetics
+(d) test coverage
+(e) quality of code
+(f) Presentation demo

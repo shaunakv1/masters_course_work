@@ -1,0 +1,24 @@
+<div id = "stylized" class = "searchresult">
+<h1>Listing pending dibs</h1>
+
+<table id = "blue-table">
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Requested By</th>
+	<th>Accept</th>
+	<th>Reject</th>
+  </tr>
+
+<% @pending_dibs.each do |dib| %>
+  <tr>
+    <td><%=h dib.title %></td>
+    <td><%=h dib.description %></td>
+    <td><%=h dib.dibber_name %></td>
+    <td><%= link_to 'Accept', accept_dib_url(:id => dib.id) %></td>
+    <td><%= link_to 'Reject', reject_dib_url(:id => dib.id) %></td>
+
+  </tr>
+<% end %>
+</table>
+</div>
