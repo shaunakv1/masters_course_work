@@ -1,0 +1,31 @@
+
+<div id = "notices" align = "center">
+		<table id = "notice-table">
+			<tr><td><%= flash[:notice] %></td></tr>
+		</table>
+</div>
+
+<table id = "publishertable">
+<tr>	
+	<td valign="top" align ="left"> 
+		<h2>Publishers</h2>
+		<%=h flash[:publishers_status]%>
+
+		<table>
+			<% publishers.each do |publisher| %>
+			
+			<tr>
+			   
+			 	<td><%= link_to_remote "#{publisher.name}" , :update => "content",:url => show_books_of_publisher_path(publisher) %></td>
+			 	<td><%= button_to_remote 'delete',:url => publisher_url(:id => publisher), :method => :delete, :update => { :success => "publishersholder", :failure => "error" } %></td>
+				<td><%= button_to_remote 'modify',:url => edit_publisher_form_path(publisher), :update => { :success => "newpublisher", :failure => "error" } %></td>
+			 	
+			<tr>
+			
+		  	<% end %>
+		</table>
+
+	</td>
+</tr>
+            
+</table>

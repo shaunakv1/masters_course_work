@@ -1,0 +1,35 @@
+<div id = "error_book" align = "center"></div>
+
+<h3>Create New Book</h3>
+<% remote_form_for( book, :update => {:success =>'content' , :failure => "error_book"}) do |f| %>
+	
+	<%= f.error_messages %>
+
+<table>  
+  <tr> 
+    <td><%= f.label :title %></td>
+    <td><%= f.text_field :title %></td>
+  </tr>
+  
+  <tr>
+   <td> <%= f.label :publisher_id %></td>
+   <td> <%= f.select :publisher_id, Publisher.all.map {|d| [d.name, d.id]} %></td>
+  </tr>
+
+  <tr>
+   <td> <%= f.label :author_id %></td>
+   <td> <%= f.collection_select(:author_ids, Author.all, :id, :first_name,{}, {:multiple => :multiple}) %></td>
+   </tr>  
+    
+   <tr>
+   	<td  align="center" ><%= f.submit 'Create' %></td>
+	<td> <input type="button" value = "Done" onclick = "clearDiv('newbook')"></td>
+	</tr>
+	
+</table>
+  
+<% end %>
+
+
+
+

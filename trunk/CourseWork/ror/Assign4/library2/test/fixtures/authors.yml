@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+sv:
+  first_name: Shaunak
+  last_name: Vairagare
+
+vs:
+  first_name: Vasundhara    
+  last_name: Singh
+
+ab:
+  first_name: Venkat
+  last_name: Subramanium

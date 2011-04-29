@@ -1,0 +1,22 @@
+<div id = "error_publisher" align = "center"></div>
+
+<%
+pulsate_publisher = "Effect.Pulsate($('publishertable').rows[$('publishertable').rows.length - 1])"
+%>
+
+<h3><%=heading%></h3>
+
+<% remote_form_for(publisher, :update => {:success =>'publishersholder' , :failure => "error_publisher"}, 
+:complete => pulsate_publisher) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+	<input type="button" value = "Done" onclick = "clearDiv('newpublisher')">
+  </p>
+<% end %>
+

@@ -1,0 +1,15 @@
+<center>
+<table>
+<tr>
+	<td rowspan=2 valign="top" align ="left">
+			<h2><%=h @heading %></h2>
+			<%=h flash[:books_status]%>
+			<ol>
+			<% @books.each do |book| %>
+				<li><%= link_to "#{book.title}", book %></li>
+		  	<% end %>
+			</ol>
+	</td>	
+</tr>
+            
+</table></center>

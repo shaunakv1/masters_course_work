@@ -1,0 +1,24 @@
+<div id = "error_author" align = "center"></div>
+
+<%
+pulsate_author = "Effect.Pulsate($('authortable').rows[$('authortable').rows.length - 1])"
+%>	
+<h3><%= heading %></h3>
+<% remote_form_for(author, :update => {:success =>'authorsholder' , :failure => "error_author"},
+   				:complete => pulsate_author) do |f| %>
+				
+			  <%= f.error_messages %>
+			
+			  <p>
+			    <%= f.label :first_name %><br />
+			    <%= f.text_field :first_name %>
+			  </p>
+			  <p>
+			    <%= f.label :last_name %><br />
+			    <%= f.text_field :last_name %>
+			  </p>
+			  <p>
+			    <%= f.submit 'Create' %>
+				<input type="button" value = "Done" onclick = "clearDiv('newauthor')">
+			  </p>
+<% end %>

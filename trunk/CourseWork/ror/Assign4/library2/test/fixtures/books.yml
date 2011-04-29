@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: Java
+  publisher: one
+  authors: sv
+  
+two:
+  title: C
+  publisher: two
+  authors: vs

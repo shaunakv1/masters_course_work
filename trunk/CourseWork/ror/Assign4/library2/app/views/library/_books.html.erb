@@ -1,0 +1,25 @@
+<center>
+	<div  align = "center">
+		<table id = "notice-table">
+			<tr><td><%= flash[:notice] %></td></tr>
+		</table>
+</div>
+
+
+
+			<h2><%=h heading %></h2>
+			
+			<%=h flash[:books_status]%>
+	<table>		
+			<% books.each do |book| %>
+		<tr>		
+				<td><%= link_to_remote "#{book.title}", :url => show_book_path(book),:update => { :success => "content", :failure => "error" }%></li><br><br></td>   
+				<td valign = "top"><%= button_to_remote 'delete',:url => book_url(:id => book), :method => :delete, :update => { :success => "content", :failure => "error" } %></td>
+    			<td valign = "top"><%= button_to_remote 'modify',:url => edit_book_form_path(book), :update => { :success => "newbook", :failure => "error" } %></td>
+        </tr>        
+		   <% end %>
+	</table>	   
+
+            
+
+</center>

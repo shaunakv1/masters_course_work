@@ -1,0 +1,16 @@
+<p>
+  <b>Title:</b>
+  <%=h book.title %>
+</p>
+
+<p>
+  <b>Publisher:</b>
+  <%= book.publisher.name %>
+</p>
+
+<p>
+  <b>Author(s):</b>
+  <%=h book.authors.map {|auth| auth.display_name}.join(',')%></br>
+</p>
+
+<%= link_to 'Back', root_path %>

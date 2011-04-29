@@ -1,0 +1,24 @@
+<div id = "notices" align = "center">
+		<table id = "notice-table">
+			<tr><td><%= flash[:notice] %></td></tr>
+		</table>
+</div>
+
+<table id = "authortable">
+<tr>
+	<td valign="top" align ="left"> 
+		<h2>Search By Authors</h2>
+		<%=h flash[:authors_status]%>
+        <table>
+		 <% authors.each do |author| %>
+			<tr>
+				<td><%= link_to_remote "#{author.display_name}" , :update => "content",:url => show_books_of_author_path(author) %> </td>
+				<td><%= button_to_remote 'delete',:url => author_url(:id => author), :method => :delete, :update => { :success => "authorsholder", :failure => "error" } %></td>
+				<td><%= button_to_remote 'modify',:url => edit_author_form_path(author), :update => "newauthor" %></td>
+			</tr>
+		 <% end %>
+		</table>
+	</td>
+</tr>
+</table>
+

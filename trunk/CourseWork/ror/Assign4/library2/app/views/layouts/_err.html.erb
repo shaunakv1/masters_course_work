@@ -1,0 +1,13 @@
+<div id = "notices" >
+<table id = "notice-table">
+	 <tr>
+        <td><%=h flash[:notice] %></td>
+     </tr>		
+<% errors.each do |error| %>
+              <tr>
+                <td><%=h error %></td>
+              </tr>
+<% end %>
+</table>
+
+</div>
