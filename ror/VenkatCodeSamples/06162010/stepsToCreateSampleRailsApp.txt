@@ -1,0 +1,73 @@
+rails grads
+
+ruby script/server (on windows use \)
+
+open http://localhost:3000 (on windows use start instead of open)
+
+ruby script/generate scaffold Degree title:string name:string years:integer
+
+rake --tasks
+
+rake db:migrate
+
+cd db
+sqlite3 development.sqlite3
+    .tables
+    pragma table_info(degrees);
+    select * from degrees;
+
+We examined the code generated so far
+
+We create a degree, and edited it
+Then we created a degree with no name or title
+That is ugly, we will fix it using
+validate.
+
+But, before then, let's reset the database
+rake db:migrate:redo
+
+In the degree.rb, added the second line below:
+class Degree < ActiveRecord::Base
+  validates_presence_of :name, :title, :years
+end
+
+Now to validate the years range, we add to degree.rb
+validates_inclusion_of :years, :in => [2, 4, 6]
+
+
+ruby script/generate scaffold Graduate first_name:string last_name:string year_of_graduation:integer degree_id:integer
+
+rake db:migrate
+
+I want degree to appear as list box.
+
+Fire up 
+ruby script/console
+Try code like
+Degree.all.map { |d| [d.name, d.id] }
+
+Edit new.html.erb (in gradutes view)
+change
+<p>
+  <%= f.label :degree_id %><br />
+  <%= f.text_field :degree_id %>
+</p>
+to
+<p>
+  <%= f.label :degree_id %><br />
+  <%= f.select :degree_id, Degree.all.map { |d| [d.name, d.id] } %>
+</p>
+
+To fix the index view,
+in graduate.rb, add
+belongs_to :degree
+and change index.html.erb to
+use graduate.degree.name instead of
+gradute.degree_id.
+
+class Graduate < ActiveRecord::Base
+  belongs_to :degree
+  
+  validates_presence_of :first_name, :last_name, :year_of_graduation, :degree
+  validates_inclusion_of :year_of_graduation, :in => 1927..4000
+end

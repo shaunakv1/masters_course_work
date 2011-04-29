@@ -1,0 +1,24 @@
+<h1>Editing degree</h1>
+
+<% form_for(@degree) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :years %><br />
+    <%= f.text_field :years %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @degree %> |
+<%= link_to 'Back', degrees_path %>

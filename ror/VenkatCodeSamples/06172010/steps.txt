@@ -1,0 +1,120 @@
+rails migrationExample
+
+cd migrationExample
+
+ruby script/generate migration sample
+
+Edited sample.rb as
+class Sample < ActiveRecord::Migration
+  def self.up
+    puts "going up"
+  end
+
+  def self.down
+    puts "going down"
+  end
+end
+
+rake --tasks
+
+rake --tasks | grep db (on windows rake --tasks > raketasks, then open raketasks and look for db)
+
+
+rake db:migrate
+
+ls db and see that the database has been created.
+
+rake db:migrate:reset
+blows away the database and reruns the migrate.
+
+rake db:migrate:redo
+This will down grade the migrations and then reapply them.
+
+cd db
+sqlite3 development.sqlite3
+	.tables
+You will see that migrations has created a special table named schema_migrations.
+
+pragma table_info(schema_migrations);
+You will see it has a special column named version.
+The table has only one row, with current version number in it.
+
+select * from schema_migrations;
+you can see the current verion.
+
+
+Don't do the following on real database, but let's play with it to see how migration behaves.
+
+update schema_migrations set version = 1;
+select * from schema_migrations;
+
+Now run rake db:migrate and see what happens.
+
+Migration simply looks for current version number. Go out to the db/migrate
+directory. Looks for each file prefix number (before the _) and applies one up
+at a time until the last (higher) version.
+
+Now I have done a reset to start over
+
+rake db:migrate:rest
+
+ruby script/generate model Degree title:string abbr:string
+
+Notice that in addition to creating model (and tests) it created a migration.
+
+Open ...create_degrees.db file
+and examine its contents.
+
+rake db:migrate
+that created the table for degrees.
+
+open the db and see the table using .tables command.
+
+ruby script/generate migration AddYearsToDegree years:integer
+
+Look at the file that is generated.
+
+rake db:migrate
+Examine the table
+pragma table_info(degrees);
+You will see the years in the table.
+
+ruby script/generate migration AddActiveToDegree active:boolean
+
+rake db:migrate
+Ensure it succeed.
+Now we will reset and try something else.
+
+Modify migration as follows:
+class AddActiveToDegree < ActiveRecord::Migration
+  def self.up
+    add_column :degrees, :active, :boolean
+    Degree.create(:title => "Bachelor of Science", 
+     :abbr => 'BS', :years => 4, :active => 1)
+  end
+
+  def self.down
+    remove_column :degrees, :active
+  end
+end
+
+run rake db:migrate:reset
+
+ruby script/generate migration RenameAbbrInDegree
+
+class RenameAbbrInDegree < ActiveRecord::Migration
+  def self.up
+    rename_column :degrees, :abbr, :short_title
+  end
+
+  def self.down
+    rename_column :degrees, :short_title, :abbr
+  end
+end
+
+rake db:migrate
+Check the schema to ensure it has changed the name of that column.
+
+
+open db/schema.rb
+shows a cumulative effect of all migrations so far.

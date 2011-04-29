@@ -1,0 +1,4 @@
+We discussed how the controller and view work together.
+We created a new action, a new view.
+We saw differences between render and redirect_to
+We saw how to create partials (and also discussed :locals)
