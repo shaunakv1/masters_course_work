@@ -1,0 +1,10 @@
+Total [100]: 94
+
+Code works [40]:
+Test coverage [20]: -3
+Warnings when running functional tests.
+
+Ajax calls provided reasonably well [20]:
+Error handling done well [20]: -3
+When I enter invalid author name, wrong area of the page
+pulsates.

@@ -1,0 +1,31 @@
+
+$:.unshift 'src'
+$:.unshift 'src/model'
+$:.unshift 'src/config'
+$:.unshift 'src/view'
+$:.unshift 'tests'
+
+require 'main'
+require 'action_test'
+
+task :default => :run
+
+task :setup do
+  puts "creating Database.."
+  `sqlite3 db/libDB < db/createSchema.sql`
+  puts "done.."
+end
+
+task :run => [:setup] do
+Main.new.start
+end
+
+task :test => [:setup] do
+  load 'tests/action_test.rb' 
+end
+
+task :clean do
+  puts "Cleaning Database..."
+  `del db/libDB`
+  puts "Done..."
+end

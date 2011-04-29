@@ -1,0 +1,30 @@
+Main Menu: 
+  '1': list_all_books 
+  '2': search
+  '3': manage
+  '4': exit
+Search Menu: 
+  '1': search_by_title
+  '2': search_by_author
+  '3': main
+Manage Menu:
+  '1': manage_authors
+  '2': manage_publishers
+  '3': manage_books
+  '4': main
+Manage Authors Menu:
+  '1': create_author
+  '2': update_author
+  '3': delete_author
+  '4': main
+Manage Publishers Menu:
+  '1': create_publisher
+  '2': update_publisher
+  '3': delete_publisher
+  '4': main
+Manage Books Menu:
+  '1': create_book
+  '2': update_book
+  '3': delete_book
+  '4': main
+

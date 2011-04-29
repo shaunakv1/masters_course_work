@@ -1,0 +1,19 @@
+Assignment 2 Due 11:59PM Monday June 21st
+
+Write a console application to manage a personal library. The application 
+will maintain a list of books. Each book has a title, a publisher, and
+a list of authors. The operations allowed are:
+
+1. Create, delete, update a publisher. A publisher only has a name and an id.
+2. Create, delete, update an author. An author has only a first name and a last name.
+3. Create, delete, update a book. A book has a title, a publisher, and
+one or more authors.
+4. List all the books in alphabetical order of title.
+5. Search for a book given an author's last name.
+6. Search for a book given part of the title.
+7. You can only delete an author or a publisher if no book is associated 
+with them.
+
+Build you application so it interactively allows a user to view books.
+
+You will use Ruby with Active Record (no rails).

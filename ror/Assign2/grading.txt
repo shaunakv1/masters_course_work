@@ -1,0 +1,11 @@
+Total [100]: 98
+
+Code works [40]:
+Create book with multiple authors [10]: -2
+I have to enter the authors full name each time I create a book!
+
+List books in alphabetical order [10]:
+Search book given author last name [10]:
+Try to delete an author with a book [10]:
+Code quality [10]:
+Other observations/concerns [10]:

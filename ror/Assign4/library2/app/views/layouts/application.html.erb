@@ -1,0 +1,60 @@
+<%=  render :partial => 'layouts/start' %>
+<body>
+	
+<script>
+	function clearDiv(div)
+	{
+		
+		$(div).innerHTML= ""; 
+	}
+</script>	
+
+<div id="header">
+	<%=  render :partial => 'layouts/header' %>
+</div>
+
+<div id="leftcol">
+	<h2>Manage Library</h2>
+	
+		<table cellspacing="5" cellpadding="5">
+	     <tr>
+		        <td><b>Books:</b></td>
+		        <td><%= link_to_remote "create" , :update => "newbook",:url => create_new_form_path %></td>
+	        
+		    </tr>
+			<tr>
+		        <td<b>Authors:</b> </td>
+				<td><%= link_to_remote "create" , :update => "newauthor",:url => create_new_author_form_path %></td>
+
+		    </tr>
+		    <tr>
+		        <td><b>Publishers:</b></td>
+				<td><%= link_to_remote "create" , :update => "newpublisher",:url => create_new_publisher_form_path %></td>
+
+		    </tr>
+			
+		</table>
+		
+		<div id="newauthor"></div>
+		<div id = "newpublisher"></div>	
+		<div id = "newbook"></div>		
+</div>
+<%= periodically_call_remote(:url => clear_notifications_path, :frequency => '10', :update => 'notices')%>
+<div id = "rightcol">
+	
+	<div id = "authorsholder">
+	 <%= render :partial => 'authors/list', :locals => {:authors => @authors} %>		
+    </div>
+	
+	<div id = "publishersholder">
+		<%= render :partial => 'publishers/list', :locals => {:publishers => @publishers} %>
+	</div>
+</div>
+
+<div id = "error"> </div>
+<div id="content">
+ <%= render :partial => 'library/books', :locals => {:books => @books, :heading => @heading} %>
+</div>
+
+</body>
+</html>
