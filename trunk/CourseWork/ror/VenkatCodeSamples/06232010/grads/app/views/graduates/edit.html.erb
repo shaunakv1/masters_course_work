@@ -1,0 +1,28 @@
+<h1>Editing graduate</h1>
+
+<% form_for(@graduate) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </p>
+  <p>
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </p>
+  <p>
+    <%= f.label :degree_id %><br />
+    <%= f.text_field :degree_id %>
+  </p>
+  <p>
+    <%= f.label :year_of_graduation %><br />
+    <%= f.text_field :year_of_graduation %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @graduate %> |
+<%= link_to 'Back', graduates_path %>

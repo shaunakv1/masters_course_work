@@ -1,0 +1,25 @@
+Students who graduate in a given year:
+<p>
+<% form_tag :action => 'display', :method => 'post' do |f| %>
+  <p>
+    Year
+    <%= text_field_tag name="year", value="#{@year}" %>
+    <%= submit_tag value="List" %>
+  </p>
+<% end %>
+
+Students:
+<table>
+<tr>
+	<td>First Name</td>
+	<td>Last Name</td>
+	<td>Degree</td>
+</tr>
+<% @graduates.each do |graduate| %>
+<tr>
+	<td><%= graduate.first_name %></td>
+	<td><%= graduate.last_name %></td>
+	<td><%= graduate.degree.name %></td>
+</tr>
+<% end %>
+</table>

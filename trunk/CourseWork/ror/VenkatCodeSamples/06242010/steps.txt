@@ -1,0 +1,26 @@
+added LoginController
+and login.html.erb
+and modifed routes.rb
+with map.connect for login/login
+
+In Graduates controller we added
+before_filter :check_user_logged_in
+
+def check_user_logged_in
+  puts "****** checking if you logged in"
+  redirect_to :controller => 'login', :action => 'login' if session[:user] == nil
+end
+
+
+After you visit graduates, you will realize you need to protect other controller, but not by making your code wet. So to keep it dry, move the above
+to ApplicationController.
+
+But that puts in a spin, always asking you to go to login, even when you go to login.
+
+before_filter :check_user_logged_in, :except => [:login, :logout]
+
+
+commenting out the filter so we can move on
+to talk about function testing separately.
+
+

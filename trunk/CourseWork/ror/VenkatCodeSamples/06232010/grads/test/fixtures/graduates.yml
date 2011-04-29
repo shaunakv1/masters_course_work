@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  first_name: John
+  last_name: Smith
+  degree: ba
+  year_of_graduation: 2009
+
+two:
+  first_name: Sara
+  last_name: Johnson
+  degree: mba
+  year_of_graduation: 2010

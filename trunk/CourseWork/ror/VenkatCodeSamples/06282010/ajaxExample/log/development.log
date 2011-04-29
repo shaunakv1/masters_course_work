@@ -1,0 +1,48 @@
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-28 10:46:01) [GET]
+
+ActionController::RoutingError (No route matches "/CO.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-28 10:46:03) [GET]
+
+ActionController::RoutingError (No route matches "/CA.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-28 10:50:13) [GET]
+
+ActionController::RoutingError (No route matches "/sample.htm" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-28 10:51:21) [GET]
+
+ActionController::RoutingError (No route matches "/sample.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-28 18:47:09) [GET]
+
+ActionController::RoutingError (No route matches "/sample.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-28 19:33:53) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/effect.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

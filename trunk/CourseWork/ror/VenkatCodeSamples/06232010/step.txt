@@ -1,0 +1,197 @@
+ruby script/generate model Degree title:string name:string years:integer
+
+Edit migration to add sample data.
+
+ruby script/generate scaffold Graduate first_name:string last_name:string degree_id:integer year_of_graduation:integer
+
+Edit migration to add sample data.
+
+rake db:migrate
+
+Create
+class AdvisorsController < ApplicationController
+end
+
+Now run
+rake routes | grep advi
+
+No show for advisors controller, but it is a good idea
+to comment out the following from routes.rb
+
+#  map.connect ':controller/:action/:id'
+#  map.connect ':controller/:action/:id.:format'
+(or even remove it for better)
+
+
+Lets add the following to routes.rb
+
+map.connect 'advisors/display', :controller => 'advisors', :action => 'display'
+
+Also, do the following:
+class AdvisorsController < ApplicationController
+  def display
+    puts "*** display called...."
+  end
+end
+
+
+Updated display action to fetch data.
+Provided the view display.html.erb to display the data.
+
+Running rake routes shows this now:
+rake routes | grep advi
+/advisors/display             {:action=>"display", :controller=>"advisors"}
+
+
+Now do the following:
+#  map.connect 'advisors/display', :controller => 'advisors', :action => 'display'
+  map.resources :advisors
+
+
+Ask for rake routes:
+rake routes | grep advi
+     advisors GET    /advisors(.:format)           {:action=>"index", :controller=>"advisors"}
+              POST   /advisors(.:format)           {:action=>"create", :controller=>"advisors"}
+  new_advisor GET    /advisors/new(.:format)       {:action=>"new", :controller=>"advisors"}
+ edit_advisor GET    /advisors/:id/edit(.:format)  {:action=>"edit", :controller=>"advisors"}
+      advisor GET    /advisors/:id(.:format)       {:action=>"show", :controller=>"advisors"}
+              PUT    /advisors/:id(.:format)       {:action=>"update", :controller=>"advisors"}
+              DELETE /advisors/:id(.:format)       {:action=>"destroy", :controller=>"advisors"}
+
+
+Now quite what we want. disp is missing.
+
+
+If I try
+
+
+open http://localhost:3000/advisors/display
+
+we get
+
+Unknown action
+
+No action responded to show. Actions: display
+
+This says show is missing, and it took display as the id!
+
+If I try
+open http://localhost:3000/advisors/1/display
+
+we get
+
+Routing Error
+
+No route matches "/advisors/1/display" with {:method=>:get}
+
+Let change to
+map.resources :advisors, :member => { :display => :get }
+
+If we visit
+open http://localhost:3000/advisors/1/display
+
+we get
+Students who graduate in a given year:
+
+Year
+Students:
+First Name 	Last Name 	Degree
+John 	Smith 	BS
+Sara 	Smith 	BS
+Bill 	Smith 	PhD
+Buddy 	Johnson 	BS
+
+But, our url is very odd. I don't like it.
+
+This is confirmed by the routes as in
+
+rake routes | grep advi
+       advisors GET    /advisors(.:format)             {:action=>"index", :controller=>"advisors"}
+                POST   /advisors(.:format)             {:action=>"create", :controller=>"advisors"}
+    new_advisor GET    /advisors/new(.:format)         {:action=>"new", :controller=>"advisors"}
+   edit_advisor GET    /advisors/:id/edit(.:format)    {:action=>"edit", :controller=>"advisors"}
+display_advisor GET    /advisors/:id/display(.:format) {:action=>"display", :controller=>"advisors"}
+        advisor GET    /advisors/:id(.:format)         {:action=>"show", :controller=>"advisors"}
+                PUT    /advisors/:id(.:format)         {:action=>"update", :controller=>"advisors"}
+                DELETE /advisors/:id(.:format)         {:action=>"destroy", :controller=>"advisors"}
+
+
+map.connect gives you the traditional url.
+
+map.resource gives you the restful url.
+
+How to combine the two?
+
+map.resources :advisors, :collection => { :display => :get }
+
+Now the routes shows:
+
+rake routes | grep advi
+display_advisors GET    /advisors/display(.:format)   {:action=>"display", :controller=>"advisors"}
+        advisors GET    /advisors(.:format)           {:action=>"index", :controller=>"advisors"}
+                 POST   /advisors(.:format)           {:action=>"create", :controller=>"advisors"}
+     new_advisor GET    /advisors/new(.:format)       {:action=>"new", :controller=>"advisors"}
+    edit_advisor GET    /advisors/:id/edit(.:format)  {:action=>"edit", :controller=>"advisors"}
+         advisor GET    /advisors/:id(.:format)       {:action=>"show", :controller=>"advisors"}
+                 PUT    /advisors/:id(.:format)       {:action=>"update", :controller=>"advisors"}
+                 DELETE /advisors/:id(.:format)       {:action=>"destroy", :controller=>"advisors"}
+
+
+Add the following to display.html.erb
+<td><%= link_to "show", graduate %></td>
+(within the table of course)
+
+Not that this is a good example, I want to put a link to
+the advisors page in the show page of a graduate.
+
+<%= link_to 'show by year', display_advisors_path %>
+
+One last change to routing:
+
+map.resources :advisors, :collection => { :display => [:get, :post]}
+
+We also discussed two things:
+Why render (or redirect) should not be called twice.
+Also, the purpose for the 'h' command (look at john<xml>)
+
+Make the views dry using partials (left as an exercise for you).
+
+We also saw how the layout can have the footers (and header).
+
+
+-------
+
+rake --tasks | grep test
+
+rake test:units
+
+complains we have not run migration.
+
+rake db:migrate
+
+rake test:units
+It ran those two dummy tests for the two
+models we have.
+
+We edited quite a few functional tests in graduates_controller_test.rb
+Study it.
+
+We then create a venkatstasks.rake in the lib/tasks directory.
+
+Now we can see it listed when we run
+
+rake --tasks
+
+Also you can run it by typing
+
+rake venkatstasks:mytask1
+and
+rake venkatstasks:mytask2
+
+Now we are going to create a rcov task.
+
+Create rcov.rake in lib/tasks with the following content: see rcov.rake file
+
+
+
+
