@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+ba:
+  title: Bachelor of Arts
+  name: BA
+  years: 4
+
+mba:
+  title: Master of Business Administration
+  name: MBA
+  years: 2

@@ -1,0 +1,63 @@
+rails grads
+ruby script/generate model Degree title:string name:string years:integer
+ruby db:migrate
+ruby script/console
+		Degree.count
+ruby script/generate scaffold Graduate first_name:string last_name:string degree_id:integer year_of_graduation:integer
+rake db:migrate
+
+We populated degrees and graduates with some data.
+
+In console, we tried pluralize on
+"person".pluralize
+"GrauateAdvisor".pluralize
+
+Created under controllers directory
+graduate_advisors_controller.rb with
+class GraduateAdvisorsController < ApplicationController
+  def index
+    puts params[:year] 
+  end
+end
+
+
+
+try
+http://localhost:3000/graudate_advisors
+
+Have a routing problem.
+Fix routes.rb to add
+map.resources :graduate_advisors
+
+mkdir graduate_advisors under views
+Create index.html.erb under graduate_advisors
+with
+
+This will display students who
+graduate in a particular year.
+(we will change this soon).
+
+Renamed action to disp and view file to
+disp.html.erb (from index.html.erb).
+
+
+map.root :controller => 'graduates', :action => 'index'  
+and also moved index.html to index.html.old
+
+map.connect 'graduate.html', :controller => 'graduates', :action => 'index'  
+
+map.connect 'disp/:year', :controller => 'graduate_advisors', :action => 'disp', :requirements => { :year => /\d{4}/}  
+
+Now these two will behave different:
+open http://localhost:3000/disp/2009
+open http://localhost:3000/disp/haha
+
+You can also specify defaults if you like:
+..., :defaults => { :year => 2010 }
+
+
+map.basic 'freebie', :controller => 'graduates', :action => 'index'
+map.basic 'paid', :controller => 'graduate_advisors', :action => 'disp', :year => 2009
+
+Url can route different category of people to different locations.
+

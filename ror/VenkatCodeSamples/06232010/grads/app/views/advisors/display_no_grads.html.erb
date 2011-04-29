@@ -1,0 +1,11 @@
+Students who graduate in a given year:
+<p>
+<% form_tag :action => 'display', :method => 'post' do |f| %>
+  <p>
+    Year
+    <%= text_field_tag name="year", value="#{@year}" %>
+    <%= submit_tag value="List" %>
+  </p>
+<% end %>
+
+No grads this year!

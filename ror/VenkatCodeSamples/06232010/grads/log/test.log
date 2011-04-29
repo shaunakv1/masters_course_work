@@ -1,0 +1,2811 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;35;1mDegree Create (0.2ms)[0m   [0mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('somename', '2010-06-24 00:39:36', 'something', 12, '2010-06-24 00:39:36')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mDegree Create (0.2ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:41:27', 'Bachelor of Arts', 4, '2010-06-24 00:41:27')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mDegree Create (0.0ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('somename', '2010-06-24 00:41:27', 'something', 12, '2010-06-24 00:41:27')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mDegree Create (0.2ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:41:27', 'Bachelor of Arts', 4, '2010-06-24 00:41:27')[0m
+  [4;36;1mDegree Create (0.3ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:42:24', 'Bachelor of Arts', 4, '2010-06-24 00:42:24')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mDegree Create (0.0ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('somename', '2010-06-24 00:42:24', 'something', 12, '2010-06-24 00:42:24')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mDegree Create (0.3ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:42:24', 'Bachelor of Arts', 4, '2010-06-24 00:42:24')[0m
+  [4;35;1mDegree Update (0.1ms)[0m   [0mUPDATE "degrees" SET "updated_at" = '2010-06-24 00:42:24', "years" = 5 WHERE "id" = 980190963[0m
+  [4;36;1mDegree Create (0.2ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:44:13', 'Bachelor of Arts', 4, '2010-06-24 00:44:13')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mDegree Create (0.1ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('somename', '2010-06-24 00:44:13', 'something', 12, '2010-06-24 00:44:13')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mDegree Create (0.2ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:44:13', 'Bachelor of Arts', 4, '2010-06-24 00:44:13')[0m
+  [4;35;1mDegree Create (0.2ms)[0m   [0mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:44:14', 'Bachelor of Arts', 4, '2010-06-24 00:44:14')[0m
+  [4;36;1mDegree Update (0.1ms)[0m   [0;1mUPDATE "degrees" SET "updated_at" = '2010-06-24 00:44:14', "years" = 5 WHERE "id" = 980190963[0m
+  [4;36;1mDegree Create (0.3ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:45:02', 'Bachelor of Arts', 4, '2010-06-24 00:45:02')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mDegree Create (0.0ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('somename', '2010-06-24 00:45:02', 'something', 12, '2010-06-24 00:45:02')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mDegree Create (0.2ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:45:02', 'Bachelor of Arts', 4, '2010-06-24 00:45:02')[0m
+  [4;35;1mDegree Create (0.2ms)[0m   [0mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:45:02', 'Bachelor of Arts', 4, '2010-06-24 00:45:02')[0m
+  [4;36;1mDegree Update (0.1ms)[0m   [0;1mUPDATE "degrees" SET "updated_at" = '2010-06-24 00:45:02', "years" = 5 WHERE "id" = 980190963[0m
+  [4;36;1mDegree Create (0.3ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:49:05', 'Bachelor of Arts', 4, '2010-06-24 00:49:05')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mDegree Create (0.0ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('somename', '2010-06-24 00:49:05', 'something', 12, '2010-06-24 00:49:05')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mDegree Create (0.2ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:49:05', 'Bachelor of Arts', 4, '2010-06-24 00:49:05')[0m
+  [4;35;1mDegree Create (0.3ms)[0m   [0mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:49:05', 'Bachelor of Arts', 4, '2010-06-24 00:49:05')[0m
+  [4;36;1mDegree Update (0.1ms)[0m   [0;1mUPDATE "degrees" SET "updated_at" = '2010-06-24 00:49:05', "years" = 5 WHERE "id" = 980190963[0m
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+  [4;36;1mDegree Create (0.3ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:53:09', 'Bachelor of Arts', 4, '2010-06-24 00:53:09')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mDegree Create (0.0ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('somename', '2010-06-24 00:53:09', 'something', 12, '2010-06-24 00:53:09')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mDegree Create (0.2ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:53:09', 'Bachelor of Arts', 4, '2010-06-24 00:53:09')[0m
+  [4;35;1mDegree Create (0.2ms)[0m   [0mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 00:53:09', 'Bachelor of Arts', 4, '2010-06-24 00:53:09')[0m
+  [4;36;1mDegree Update (0.1ms)[0m   [0;1mUPDATE "degrees" SET "updated_at" = '2010-06-24 00:53:09', "years" = 5 WHERE "id" = 749160981[0m
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 305191309) [0m
+  [4;36;1mGraduate Create (0.3ms)[0m   [0;1mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-24 00:53:09', 2010, 305191309, '2010-06-24 00:53:09', 'Smith', 'John')[0m
+  [4;36;1mDegree Create (0.3ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 23:40:04', 'Bachelor of Arts', 4, '2010-06-24 23:40:04')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mDegree Create (0.0ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('somename', '2010-06-24 23:40:04', 'something', 12, '2010-06-24 23:40:04')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "degrees" [0m
+  [4;36;1mDegree Create (0.2ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 23:40:04', 'Bachelor of Arts', 4, '2010-06-24 23:40:04')[0m
+  [4;35;1mDegree Create (0.2ms)[0m   [0mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-24 23:40:04', 'Bachelor of Arts', 4, '2010-06-24 23:40:04')[0m
+  [4;36;1mDegree Update (0.1ms)[0m   [0;1mUPDATE "degrees" SET "updated_at" = '2010-06-24 23:40:04', "years" = 5 WHERE "id" = 749160981[0m
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 305191309) [0m
+  [4;36;1mGraduate Create (0.3ms)[0m   [0;1mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-24 23:40:04', 2010, 305191309, '2010-06-24 23:40:04', 'Smith', 'John')[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 18:40:14) [POST]
+  Parameters: {"graduate"=>{}}
+  [4;35;1mGraduate Create (0.4ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-24 23:40:14', NULL, NULL, '2010-06-24 23:40:14', NULL, NULL)[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/graduates?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 18:40:14) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.2ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 18:40:14) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 18:40:14) [GET]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 18:40:14) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 18:40:14) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 18:40:14) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 18:41:14) [POST]
+  Parameters: {"graduate"=>{}}
+  [4;35;1mGraduate Create (0.3ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-24 23:41:14', NULL, NULL, '2010-06-24 23:41:14', NULL, NULL)[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/graduates?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 18:41:14) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.1ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 18:41:14) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 18:41:14) [GET]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 18:41:14) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 18:41:14) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 18:41:14) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 18:43:03) [POST]
+  Parameters: {"graduate"=>{}}
+  [4;35;1mGraduate Create (0.3ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-24 23:43:03', NULL, NULL, '2010-06-24 23:43:03', NULL, NULL)[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/graduates?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 18:43:03) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.1ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 18:43:03) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 18:43:03) [GET]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 18:43:03) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 18:43:03) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 18:43:03) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 18:48:46) [POST]
+  Parameters: {"graduate"=>{}}
+  [4;35;1mGraduate Create (0.3ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-24 23:48:46', NULL, NULL, '2010-06-24 23:48:46', NULL, NULL)[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/graduates?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 18:48:46) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.1ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 18:48:46) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 18:48:47) [GET]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 18:48:47) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 18:48:47) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 18:48:47) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 18:49:15) [POST]
+  Parameters: {"graduate"=>{}}
+  [4;35;1mGraduate Create (0.3ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-24 23:49:15', NULL, NULL, '2010-06-24 23:49:15', NULL, NULL)[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/graduates?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 18:49:15) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.1ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 18:49:15) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 8, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 18:49:15) [GET]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 18:49:15) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 18:49:15) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 18:49:15) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 18:52:37) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://test.host/graduates?]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 18:52:37) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;35;1mGraduate Destroy (0.2ms)[0m   [0mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/graduates/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 18:52:37) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 18:52:37) [GET]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 18:52:37) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 18:52:37) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 18:52:37) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 18:53:27) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;35;1mGraduate Create (0.3ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-24 23:53:27', NULL, NULL, '2010-06-24 23:53:27', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 18:53:27) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.2ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 18:53:27) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 18:53:27) [GET]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 18:53:27) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 18:53:27) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 18:53:27) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 18:57:40) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;35;1mGraduate Create (0.3ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-24 23:57:40', NULL, NULL, '2010-06-24 23:57:40', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 18:57:40) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.1ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 18:57:40) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 18:57:40) [GET]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 18:57:40) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 18:57:40) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 18:57:40) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 18:57:40) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:00:55) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;35;1mGraduate Create (0.3ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:00:55', NULL, NULL, '2010-06-25 00:00:55', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:00:55) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.1ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:00:55) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:00:55) [GET]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:00:55) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:00:55) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:00:55) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:00:55) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:01:25) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;35;1mGraduate Create (0.3ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:01:25', NULL, NULL, '2010-06-25 00:01:25', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:01:25) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.1ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:01:25) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:01:25) [GET]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:01:25) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:01:25) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:01:25) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:01:25) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:01:59) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;35;1mGraduate Create (0.3ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:01:59', NULL, NULL, '2010-06-25 00:01:59', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:01:59) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.1ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:01:59) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:01:59) [GET]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:01:59) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:01:59) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:01:59) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:01:59) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 19:16:37) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /test/performance/browsing_test.rb:7:in `test_homepage'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit.rb:278
+  /usr/bin/rcov:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 19:16:38) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /test/performance/browsing_test.rb:7:in `test_homepage'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit.rb:278
+  /usr/bin/rcov:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:16:38) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:16:38) [DELETE]
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:16:38) [GET]
+  Parameters: {"id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:16:38) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 70ms (View: 69, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:16:38) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:16:38) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/graduates?]
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:16:38) [GET]
+  Parameters: {"id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:16:38) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:22:26) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;35;1mGraduate Create (0.3ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:22:26', NULL, NULL, '2010-06-25 00:22:26', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 1) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:22:26) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.2ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:22:26) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:22:26) [GET]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:22:26) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:22:26) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:22:26) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:22:26) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:22:26) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 19:24:00) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /test/performance/browsing_test.rb:7:in `test_homepage'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit.rb:278
+  /usr/bin/rcov:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 19:24:00) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /test/performance/browsing_test.rb:7:in `test_homepage'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit.rb:278
+  /usr/bin/rcov:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:24:00) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+Redirected to http://test.host/graduates/980190963
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:24:00) [DELETE]
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:24:00) [GET]
+  Parameters: {"id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:24:00) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 73ms (View: 72, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:24:00) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:24:00) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/graduates?]
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:24:00) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:24:00) [GET]
+  Parameters: {"id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:24:00) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:33:47) [POST]
+  Parameters: {"year"=>"2009"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '2009') [0m
+Rendering advisors/display_no_grads
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://test.host/advisors/display?year=2009]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:33:47) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;36;1mGraduate Create (0.3ms)[0m   [0;1mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:33:47', NULL, NULL, '2010-06-25 00:33:47', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:33:47) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;35;1mGraduate Destroy (0.1ms)[0m   [0mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:33:47) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:33:47) [GET]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:33:48) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:33:48) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:33:48) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:33:48) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:33:48) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:34:21) [POST]
+  Parameters: {"year"=>"2009"}
+Rendering advisors/display_no_grads
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://test.host/advisors/display?year=2009]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 19:34:21) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /test/performance/browsing_test.rb:7:in `test_homepage'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit.rb:278
+  /usr/bin/rcov:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 19:34:21) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /test/performance/browsing_test.rb:7:in `test_homepage'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit.rb:278
+  /usr/bin/rcov:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:34:22) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+Redirected to http://test.host/graduates/980190963
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:34:22) [DELETE]
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/graduates/980190962]
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:34:22) [GET]
+  Parameters: {"id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:34:22) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:34:22) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:34:22) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/graduates?]
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:34:22) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:34:22) [GET]
+  Parameters: {"id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:34:22) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:37:11) [POST]
+  Parameters: {"year"=>"2009"}
+Rendering advisors/display_no_grads
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://test.host/advisors/display?year=2009]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 19:37:11) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /test/performance/browsing_test.rb:7:in `test_homepage'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit.rb:278
+  /usr/bin/rcov:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 19:37:11) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /test/performance/browsing_test.rb:7:in `test_homepage'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit.rb:278
+  /usr/bin/rcov:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:37:11) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 2) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:37:12) [DELETE]
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/graduates
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/graduates/980190962]
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:37:12) [GET]
+  Parameters: {"id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 9ms (View: 8, DB: 1) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:37:12) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:37:12) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:37:12) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/graduates?]
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:37:12) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:37:12) [GET]
+  Parameters: {"id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:37:12) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:39:36) [POST]
+  Parameters: {"year"=>"2009"}
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '2009') [0m
+Rendering advisors/display
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:39:36) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;35;1mGraduate Create (0.3ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:39:36', NULL, NULL, '2010-06-25 00:39:36', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:39:36) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.1ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:39:36) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:39:36) [GET]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:39:36) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:39:36) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:39:36) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:39:36) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:39:36) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:41:14) [POST]
+  Parameters: {"year"=>"2009"}
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '2009') [0m
+Rendering advisors/display
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 0) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:41:14) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;35;1mGraduate Create (0.2ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:41:14', NULL, NULL, '2010-06-25 00:41:14', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:41:14) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.1ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:41:14) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:41:14) [GET]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:41:14) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:41:14) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:41:14) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:41:14) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:41:14) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:46:52) [POST]
+  Parameters: {"year"=>"2009"}
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '2009') [0m
+Rendering advisors/display
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 749160980) [0m
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://test.host/advisors/display?year=2009]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:46:52) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;35;1mGraduate Create (0.2ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:46:52', NULL, NULL, '2010-06-25 00:46:52', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:46:52) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.1ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:46:52) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:46:52) [GET]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:46:52) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:46:52) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:46:52) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:46:52) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:46:52) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:47:31) [POST]
+  Parameters: {"year"=>"2009"}
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '2009') [0m
+Rendering advisors/display
+  [4;35;1mDegree Load (0.2ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 749160980) [0m
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://test.host/advisors/display?year=2009]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:47:31) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;35;1mGraduate Create (0.2ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:47:31', NULL, NULL, '2010-06-25 00:47:31', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:47:31) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.2ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:47:31) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:47:31) [GET]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:47:31) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:47:31) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:47:31) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:47:31) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:47:31) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:47:49) [POST]
+  Parameters: {"year"=>"2009"}
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '2009') [0m
+Rendering advisors/display
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 749160980) [0m
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://test.host/advisors/display?year=2009]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:47:49) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;35;1mGraduate Create (0.2ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:47:49', NULL, NULL, '2010-06-25 00:47:49', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:47:49) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.1ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:47:49) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:47:49) [GET]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:47:49) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:47:49) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:47:49) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:47:50) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:47:50) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:49:46) [POST]
+  Parameters: {"year"=>"2009"}
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '2009') [0m
+Rendering advisors/display
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 749160980) [0m
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://test.host/advisors/display?year=2009]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:49:46) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;35;1mGraduate Create (0.2ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:49:46', NULL, NULL, '2010-06-25 00:49:46', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:49:46) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.1ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:49:46) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:49:46) [GET]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:49:46) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:49:46) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:49:46) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:49:46) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:49:46) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:49:59) [POST]
+  Parameters: {"year"=>"2009"}
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '2009') [0m
+Rendering advisors/display
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 749160980) [0m
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://test.host/advisors/display?year=2009]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:49:59) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;35;1mGraduate Create (0.2ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:49:59', NULL, NULL, '2010-06-25 00:49:59', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:49:59) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.2ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.3ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:49:59) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:49:59) [GET]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:49:59) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:49:59) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:49:59) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:49:59) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:49:59) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:50:52) [POST]
+  Parameters: {"year"=>"2009"}
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '2009') [0m
+Rendering advisors/display
+  [4;35;1mDegree Load (0.2ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 749160980) [0m
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://test.host/advisors/display?year=2009]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:50:52) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;35;1mGraduate Create (0.2ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:50:52', NULL, NULL, '2010-06-25 00:50:52', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:50:52) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.2ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:50:52) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:50:52) [GET]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:50:52) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:50:52) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:50:52) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:50:52) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:50:52) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:51:17) [POST]
+  Parameters: {"year"=>"2009"}
+Rendering advisors/display
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://test.host/advisors/display?year=2009]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 19:51:17) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /test/performance/browsing_test.rb:7:in `test_homepage'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit.rb:278
+  /usr/bin/rcov:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 19:51:17) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /test/performance/browsing_test.rb:7:in `test_homepage'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit.rb:278
+  /usr/bin/rcov:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:51:18) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+Redirected to http://test.host/graduates/980190963
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:51:18) [DELETE]
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:51:18) [GET]
+  Parameters: {"id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:51:18) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:51:18) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 71ms (View: 71, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:51:18) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/graduates?]
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:51:18) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:51:18) [GET]
+  Parameters: {"id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:51:18) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:52:54) [POST]
+  Parameters: {"year"=>"2009"}
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '2009') [0m
+Rendering advisors/display
+  [4;35;1mDegree Load (0.2ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 749160980) [0m
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://test.host/advisors/display?year=2009]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:52:54) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;35;1mGraduate Create (0.2ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:52:54', NULL, NULL, '2010-06-25 00:52:54', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:52:54) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;36;1mGraduate Destroy (0.1ms)[0m   [0;1mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:52:54) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:52:54) [GET]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:52:54) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:52:54) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:52:54) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:52:54) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:52:54) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:52:59) [POST]
+  Parameters: {"year"=>"2009"}
+Rendering advisors/display
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://test.host/advisors/display?year=2009]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 19:52:59) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /test/performance/browsing_test.rb:7:in `test_homepage'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit.rb:278
+  /usr/bin/rcov:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 19:52:59) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /test/performance/browsing_test.rb:7:in `test_homepage'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit.rb:278
+  /usr/bin/rcov:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:53:00) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+Redirected to http://test.host/graduates/980190963
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:53:00) [DELETE]
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:53:00) [GET]
+  Parameters: {"id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:53:00) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:53:00) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:53:00) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/graduates?]
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:53:00) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:53:00) [GET]
+  Parameters: {"id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:53:00) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:53:56) [POST]
+  Parameters: {"year"=>"2011"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '2011') [0m
+Rendering advisors/display_no_grads
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://test.host/advisors/display?year=2011]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:53:56) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;36;1mGraduate Create (0.3ms)[0m   [0;1mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:53:56', NULL, NULL, '2010-06-25 00:53:56', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:53:56) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;35;1mGraduate Destroy (0.1ms)[0m   [0mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:53:56) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:53:56) [GET]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:53:56) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:53:56) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:53:56) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:53:56) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:53:56) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:54:15) [POST]
+  Parameters: {"year"=>"2011"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '2011') [0m
+Rendering advisors/display_no_grads
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://test.host/advisors/display?year=2011]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:54:15) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;36;1mGraduate Create (0.3ms)[0m   [0;1mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:54:15', NULL, NULL, '2010-06-25 00:54:15', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:54:15) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;35;1mGraduate Destroy (0.2ms)[0m   [0mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/graduates/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:54:15) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:54:16) [GET]
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:54:16) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:54:16) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:54:16) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:54:16) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:54:16) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:54:43) [POST]
+  Parameters: {"year"=>"2011"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '2011') [0m
+Rendering advisors/display_no_grads
+Completed in 7ms (View: 2, DB: 1) | 200 OK [http://test.host/advisors/display?year=2011]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:54:43) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;36;1mGraduate Create (0.3ms)[0m   [0;1mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:54:43', NULL, NULL, '2010-06-25 00:54:43', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:54:43) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;35;1mGraduate Destroy (0.2ms)[0m   [0mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/graduates/980190962]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:54:43) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:54:43) [GET]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:54:43) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:54:43) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:54:43) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:54:43) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:54:43) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:54:57) [POST]
+  Parameters: {"year"=>"2011"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '2011') [0m
+Rendering advisors/display_no_grads
+Completed in 8ms (View: 2, DB: 1) | 200 OK [http://test.host/advisors/display?year=2011]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:54:57) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;36;1mGraduate Create (0.3ms)[0m   [0;1mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:54:57', NULL, NULL, '2010-06-25 00:54:57', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 4ms (DB: 0) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:54:57) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;35;1mGraduate Destroy (0.2ms)[0m   [0mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 1) | 302 Found [http://test.host/graduates/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:54:57) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:54:57) [GET]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:54:57) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:54:57) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:54:57) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:54:57) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:54:57) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:55:55) [POST]
+  Parameters: {"year"=>"2009"}
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '2009') [0m
+Rendering advisors/display
+  [4;35;1mDegree Load (0.2ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 749160980) [0m
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://test.host/advisors/display?year=2009]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:55:55) [POST]
+  Parameters: {"year"=>"1900"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."year_of_graduation" = '1900') [0m
+Rendering advisors/display_no_grads
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/advisors/display?year=1900]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:55:55) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+  [4;36;1mGraduate Create (0.2ms)[0m   [0;1mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-25 00:55:55', NULL, NULL, '2010-06-25 00:55:55', NULL, 'John')[0m
+Redirected to http://test.host/graduates/980190963
+Completed in 3ms (DB: 0) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:55:55) [DELETE]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+  [4;35;1mGraduate Destroy (0.1ms)[0m   [0mDELETE FROM "graduates" WHERE "id" = 980190962[0m
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM "graduates" [0m
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:55:55) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:55:55) [GET]
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:55:55) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:55:55) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/graduates?]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:55:55) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+  [4;36;1mGraduate Load (0.2ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:55:55) [GET]
+  Parameters: {"id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:55:55) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+  [4;35;1mGraduate Load (0.1ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 980190962) [0m
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:56:03) [POST]
+  Parameters: {"year"=>"2009"}
+Rendering advisors/display
+Completed in 11ms (View: 6, DB: 1) | 200 OK [http://test.host/advisors/display?year=2009]
+
+
+Processing AdvisorsController#display (for 0.0.0.0 at 2010-06-24 19:56:03) [POST]
+  Parameters: {"year"=>"1900"}
+Rendering advisors/display_no_grads
+Completed in 66ms (View: 65, DB: 0) | 200 OK [http://test.host/advisors/display?year=1900]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 19:56:03) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /test/performance/browsing_test.rb:7:in `test_homepage'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit.rb:278
+  /usr/bin/rcov:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-24 19:56:03) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /test/performance/browsing_test.rb:7:in `test_homepage'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:34:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `each'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/testsuite.rb:33:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnermediator.rb:46:in `run_suite'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:67:in `start_mediator'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/console/testrunner.rb:41:in `start'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/ui/testrunnerutilities.rb:29:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:216:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit/autorunner.rb:12:in `run'
+  /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/test/unit.rb:278
+  /usr/bin/rcov:19
+
+Rendering rescues/layout (not_found)
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:56:04) [POST]
+  Parameters: {"graduate"=>{"first_name"=>"John"}}
+Redirected to http://test.host/graduates/980190963
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/graduates?graduate%5Bfirst_name%5D=John]
+
+
+Processing GraduatesController#destroy (for 0.0.0.0 at 2010-06-24 19:56:04) [DELETE]
+  Parameters: {"id"=>"980190962"}
+Redirected to http://test.host/graduates
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/graduates/980190962]
+
+
+Processing GraduatesController#edit (for 0.0.0.0 at 2010-06-24 19:56:04) [GET]
+  Parameters: {"id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 8ms (View: 7, DB: 0) | 200 OK [http://test.host/graduates/980190962/edit]
+
+
+Processing GraduatesController#index (for 0.0.0.0 at 2010-06-24 19:56:04) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://test.host/graduates]
+
+
+Processing GraduatesController#new (for 0.0.0.0 at 2010-06-24 19:56:04) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 4ms (View: 4, DB: 0) | 200 OK [http://test.host/graduates/new]
+
+
+Processing GraduatesController#create (for 0.0.0.0 at 2010-06-24 19:56:04) [POST]
+  Parameters: {"graduate"=>{}}
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://test.host/graduates?]
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:56:04) [PUT]
+  Parameters: {"graduate"=>{"first_name"=>nil}, "id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 74ms (View: 72, DB: 0) | 200 OK [http://test.host/graduates/980190962?graduate%5Bfirst_name%5D=]
+
+
+Processing GraduatesController#show (for 0.0.0.0 at 2010-06-24 19:56:04) [GET]
+  Parameters: {"id"=>"980190962"}
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://test.host/graduates/980190962]
+
+
+Processing GraduatesController#update (for 0.0.0.0 at 2010-06-24 19:56:04) [PUT]
+  Parameters: {"graduate"=>{}, "id"=>"980190962"}
+Redirected to http://test.host/graduates/980190962
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/graduates/980190962?]
