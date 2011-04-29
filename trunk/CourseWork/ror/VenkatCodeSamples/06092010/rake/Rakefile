@@ -1,0 +1,13 @@
+task :default => :deliver
+
+task :setup do
+  puts "getting ready for work"
+end
+
+task :work => [:setup] do
+  puts "get work done"
+end
+
+task :deliver => [:work] do
+  puts "deliver the work done"
+end
