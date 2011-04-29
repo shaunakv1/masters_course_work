@@ -1,0 +1,8 @@
+OUTPUT = 'output.txt'
+INPUT = 'input.txt'
+
+task :default => OUTPUT
+
+file OUTPUT => INPUT do |task|
+  cp task.prerequisites[0], task.name
+end
