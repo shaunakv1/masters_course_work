@@ -1,0 +1,603 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (41.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (8.8ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateDegrees (20100616232253)
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "degrees" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "name" varchar(255), "years" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100616232253')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("degrees")[0m
+
+
+Processing DegreesController#index (for 127.0.0.1 at 2010-06-16 17:32:18) [GET]
+  [4;36;1mDegree Load (0.3ms)[0m   [0;1mSELECT * FROM "degrees" [0m
+Rendering template within layouts/degrees
+Rendering degrees/index
+Completed in 18ms (View: 15, DB: 0) | 200 OK [http://localhost/degrees]
+
+
+Processing DegreesController#new (for 127.0.0.1 at 2010-06-16 17:32:41) [GET]
+Rendering template within layouts/degrees
+Rendering degrees/new
+Completed in 19ms (View: 15, DB: 0) | 200 OK [http://localhost/degrees/new]
+
+
+Processing DegreesController#create (for 127.0.0.1 at 2010-06-16 17:32:57) [POST]
+  Parameters: {"commit"=>"Create", "degree"=>{"name"=>"BA", "years"=>"4", "title"=>"Bachelor of Science"}, "authenticity_token"=>"h+p6xMWapSS0zFWZebOobJVk9hQxaMS9d0AHSZy3YG8="}
+  [4;35;1mDegree Create (0.3ms)[0m   [0mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BA', '2010-06-16 23:32:57', 'Bachelor of Science', 4, '2010-06-16 23:32:57')[0m
+Redirected to http://localhost:3000/degrees/1
+Completed in 94ms (DB: 0) | 302 Found [http://localhost/degrees]
+
+
+Processing DegreesController#show (for 127.0.0.1 at 2010-06-16 17:32:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDegree Load (0.1ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/show
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#edit (for 127.0.0.1 at 2010-06-16 17:33:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 14ms (View: 10, DB: 0) | 200 OK [http://localhost/degrees/1/edit]
+
+
+Processing DegreesController#update (for 127.0.0.1 at 2010-06-16 17:33:19) [PUT]
+  Parameters: {"commit"=>"Update", "degree"=>{"name"=>"BS", "years"=>"4", "title"=>"Bachelor of Science"}, "authenticity_token"=>"h+p6xMWapSS0zFWZebOobJVk9hQxaMS9d0AHSZy3YG8=", "id"=>"1"}
+  [4;36;1mDegree Load (0.2ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+  [4;35;1mDegree Update (0.3ms)[0m   [0mUPDATE "degrees" SET "updated_at" = '2010-06-16 23:33:19', "name" = 'BS' WHERE "id" = 1[0m
+Redirected to http://localhost:3000/degrees/1
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/degrees/1]
+
+
+Processing DegreesController#show (for 127.0.0.1 at 2010-06-16 17:33:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDegree Load (0.1ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/show
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#index (for 127.0.0.1 at 2010-06-16 17:33:33) [GET]
+  [4;35;1mDegree Load (0.5ms)[0m   [0mSELECT * FROM "degrees" [0m
+Rendering template within layouts/degrees
+Rendering degrees/index
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/degrees]
+
+
+Processing DegreesController#show (for 127.0.0.1 at 2010-06-16 17:38:41) [GET]
+  Parameters: {"id"=>"index"}
+  [4;36;1mDegree Load (0.1ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Degree with ID=index):
+  app/controllers/degrees_controller.rb:16:in `show'
+
+Rendered rescues/_trace (42.8ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing DegreesController#index (for 127.0.0.1 at 2010-06-16 17:39:05) [GET]
+  [4;35;1mDegree Load (0.6ms)[0m   [0mSELECT * FROM "degrees" [0m
+Rendering template within layouts/degrees
+Rendering degrees/index
+Completed in 22ms (View: 10, DB: 1) | 200 OK [http://localhost/degrees]
+
+
+Processing DegreesController#index (for 127.0.0.1 at 2010-06-16 17:45:01) [GET]
+  [4;36;1mDegree Load (0.4ms)[0m   [0;1mSELECT * FROM "degrees" [0m
+Rendering template within layouts/degrees
+Rendering degrees/index
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/degrees]
+
+
+Processing DegreesController#new (for 127.0.0.1 at 2010-06-16 17:45:07) [GET]
+Rendering template within layouts/degrees
+Rendering degrees/new
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/degrees/new]
+
+
+Processing DegreesController#create (for 127.0.0.1 at 2010-06-16 17:45:19) [POST]
+  Parameters: {"commit"=>"Create", "degree"=>{"name"=>"", "years"=>"", "title"=>""}, "authenticity_token"=>"aUbaqAOPHA4bkEeCLmgEJutmADnIJsDmpjUes41YegE="}
+  [4;35;1mDegree Create (0.3ms)[0m   [0mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('', '2010-06-16 23:45:19', '', NULL, '2010-06-16 23:45:19')[0m
+Redirected to http://localhost:3000/degrees/2
+Completed in 45ms (DB: 0) | 302 Found [http://localhost/degrees]
+
+
+Processing DegreesController#show (for 127.0.0.1 at 2010-06-16 17:45:19) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mDegree Load (0.1ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 2) [0m
+Rendering template within layouts/degrees
+Rendering degrees/show
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/degrees/2]
+
+
+Processing DegreesController#index (for 127.0.0.1 at 2010-06-16 17:45:35) [GET]
+  [4;35;1mDegree Load (0.4ms)[0m   [0mSELECT * FROM "degrees" [0m
+Rendering template within layouts/degrees
+Rendering degrees/index
+Completed in 43ms (View: 39, DB: 0) | 200 OK [http://localhost/degrees]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDegrees (20100616232253)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mDROP TABLE "degrees"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100616232253'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDegrees (20100616232253)
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "degrees" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "name" varchar(255), "years" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100616232253')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("degrees")[0m
+
+
+Processing DegreesController#index (for 127.0.0.1 at 2010-06-16 17:47:14) [GET]
+  [4;36;1mDegree Load (0.3ms)[0m   [0;1mSELECT * FROM "degrees" [0m
+Rendering template within layouts/degrees
+Rendering degrees/index
+Completed in 17ms (View: 1, DB: 0) | 200 OK [http://localhost/degrees]
+
+
+Processing DegreesController#index (for 127.0.0.1 at 2010-06-16 17:48:23) [GET]
+  [4;35;1mDegree Load (0.3ms)[0m   [0mSELECT * FROM "degrees" [0m
+Rendering template within layouts/degrees
+Rendering degrees/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/degrees]
+
+
+Processing DegreesController#new (for 127.0.0.1 at 2010-06-16 17:48:27) [GET]
+Rendering template within layouts/degrees
+Rendering degrees/new
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/degrees/new]
+
+
+Processing DegreesController#create (for 127.0.0.1 at 2010-06-16 17:48:34) [POST]
+  Parameters: {"commit"=>"Create", "degree"=>{"name"=>"", "years"=>"", "title"=>""}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY="}
+Rendering template within layouts/degrees
+Rendering degrees/new
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/degrees]
+
+
+Processing DegreesController#create (for 127.0.0.1 at 2010-06-16 17:49:47) [POST]
+  Parameters: {"commit"=>"Create", "degree"=>{"name"=>"", "years"=>"", "title"=>""}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY="}
+Rendering template within layouts/degrees
+Rendering degrees/new
+Completed in 16ms (View: 11, DB: 0) | 200 OK [http://localhost/degrees]
+
+
+Processing DegreesController#create (for 127.0.0.1 at 2010-06-16 17:50:51) [POST]
+  Parameters: {"commit"=>"Create", "degree"=>{"name"=>"BS", "years"=>"-2", "title"=>"Bachelor of Science"}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY="}
+  [4;36;1mDegree Create (0.5ms)[0m   [0;1mINSERT INTO "degrees" ("name", "created_at", "title", "years", "updated_at") VALUES('BS', '2010-06-16 23:50:51', 'Bachelor of Science', -2, '2010-06-16 23:50:51')[0m
+Redirected to http://localhost:3000/degrees/1
+Completed in 84ms (DB: 1) | 302 Found [http://localhost/degrees]
+
+
+Processing DegreesController#show (for 127.0.0.1 at 2010-06-16 17:50:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/show
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#edit (for 127.0.0.1 at 2010-06-16 17:50:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDegree Load (0.1ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/degrees/1/edit]
+
+
+Processing DegreesController#update (for 127.0.0.1 at 2010-06-16 17:51:01) [PUT]
+  Parameters: {"commit"=>"Update", "degree"=>{"name"=>"BS", "years"=>"4", "title"=>"Bachelor of Science"}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY=", "id"=>"1"}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+  [4;36;1mDegree Update (0.2ms)[0m   [0;1mUPDATE "degrees" SET "updated_at" = '2010-06-16 23:51:01', "years" = 4 WHERE "id" = 1[0m
+Redirected to http://localhost:3000/degrees/1
+Completed in 10ms (DB: 0) | 302 Found [http://localhost/degrees/1]
+
+
+Processing DegreesController#show (for 127.0.0.1 at 2010-06-16 17:51:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDegree Load (0.2ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/show
+Completed in 9ms (View: 3, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#edit (for 127.0.0.1 at 2010-06-16 17:51:04) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDegree Load (0.1ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 18ms (View: 8, DB: 0) | 200 OK [http://localhost/degrees/1/edit]
+
+
+Processing DegreesController#update (for 127.0.0.1 at 2010-06-16 17:51:08) [PUT]
+  Parameters: {"commit"=>"Update", "degree"=>{"name"=>"BS", "years"=>"4", "title"=>""}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY=", "id"=>"1"}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#show (for 127.0.0.1 at 2010-06-16 17:54:28) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDegree Load (0.1ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/show
+Completed in 7ms (View: 2, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#edit (for 127.0.0.1 at 2010-06-16 17:54:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/degrees/1/edit]
+
+
+Processing DegreesController#update (for 127.0.0.1 at 2010-06-16 17:54:39) [PUT]
+  Parameters: {"commit"=>"Update", "degree"=>{"name"=>"BS", "years"=>"-2", "title"=>"Bachelor of Science"}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY=", "id"=>"1"}
+  [4;36;1mDegree Load (0.1ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 87ms (View: 7, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#update (for 127.0.0.1 at 2010-06-16 17:54:51) [PUT]
+  Parameters: {"commit"=>"Update", "degree"=>{"name"=>"BS", "years"=>"4", "title"=>"Bachelor of Science"}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY=", "id"=>"1"}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#update (for 127.0.0.1 at 2010-06-16 17:54:53) [PUT]
+  Parameters: {"commit"=>"Update", "degree"=>{"name"=>"BS", "years"=>"4", "title"=>"Bachelor of Science"}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY=", "id"=>"1"}
+  [4;36;1mDegree Load (0.1ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#update (for 127.0.0.1 at 2010-06-16 17:54:54) [PUT]
+  Parameters: {"commit"=>"Update", "degree"=>{"name"=>"BS", "years"=>"4", "title"=>"Bachelor of Science"}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY=", "id"=>"1"}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 14ms (View: 9, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#update (for 127.0.0.1 at 2010-06-16 17:54:54) [PUT]
+  Parameters: {"commit"=>"Update", "degree"=>{"name"=>"BS", "years"=>"4", "title"=>"Bachelor of Science"}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY=", "id"=>"1"}
+  [4;36;1mDegree Load (0.1ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 14ms (View: 8, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#update (for 127.0.0.1 at 2010-06-16 17:54:55) [PUT]
+  Parameters: {"commit"=>"Update", "degree"=>{"name"=>"BS", "years"=>"4", "title"=>"Bachelor of Science"}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY=", "id"=>"1"}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#update (for 127.0.0.1 at 2010-06-16 17:54:57) [PUT]
+  Parameters: {"commit"=>"Update", "degree"=>{"name"=>"BS", "years"=>"4", "title"=>"Bachelor of Science"}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY=", "id"=>"1"}
+  [4;36;1mDegree Load (0.1ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 82ms (View: 76, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#update (for 127.0.0.1 at 2010-06-16 17:54:59) [PUT]
+  Parameters: {"commit"=>"Update", "degree"=>{"name"=>"BS", "years"=>"4", "title"=>"Bachelor of Science"}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY=", "id"=>"1"}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 13ms (View: 8, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#index (for 127.0.0.1 at 2010-06-16 17:55:37) [GET]
+  [4;36;1mDegree Load (0.6ms)[0m   [0;1mSELECT * FROM "degrees" [0m
+Rendering template within layouts/degrees
+Rendering degrees/index
+Completed in 10ms (View: 5, DB: 1) | 200 OK [http://localhost/degrees]
+
+
+Processing DegreesController#edit (for 127.0.0.1 at 2010-06-16 17:55:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDegree Load (0.2ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 12ms (View: 7, DB: 0) | 200 OK [http://localhost/degrees/1/edit]
+
+
+Processing DegreesController#update (for 127.0.0.1 at 2010-06-16 17:55:45) [PUT]
+  Parameters: {"commit"=>"Update", "degree"=>{"name"=>"BS", "years"=>"-2", "title"=>"Bachelor of Science"}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY=", "id"=>"1"}
+  [4;36;1mDegree Load (0.1ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#update (for 127.0.0.1 at 2010-06-16 17:55:49) [PUT]
+  Parameters: {"commit"=>"Update", "degree"=>{"name"=>"BS", "years"=>"4", "title"=>"Bachelor of Science"}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY=", "id"=>"1"}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Redirected to http://localhost:3000/degrees/1
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/degrees/1]
+
+
+Processing DegreesController#show (for 127.0.0.1 at 2010-06-16 17:55:50) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDegree Load (0.1ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/show
+Completed in 10ms (View: 2, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#edit (for 127.0.0.1 at 2010-06-16 17:55:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://localhost/degrees/1/edit]
+
+
+Processing DegreesController#update (for 127.0.0.1 at 2010-06-16 17:55:56) [PUT]
+  Parameters: {"commit"=>"Update", "degree"=>{"name"=>"BS", "years"=>"8", "title"=>"Bachelor of Science"}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY=", "id"=>"1"}
+  [4;36;1mDegree Load (0.1ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 76ms (View: 68, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#update (for 127.0.0.1 at 2010-06-16 17:56:06) [PUT]
+  Parameters: {"commit"=>"Update", "degree"=>{"name"=>"BS", "years"=>"4", "title"=>"Bachelor of Science"}, "authenticity_token"=>"WNM1vQOYnm+T4m7/6kDiIvwo8GwKHxWAA788vq+r+FY=", "id"=>"1"}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Redirected to http://localhost:3000/degrees/1
+Completed in 6ms (DB: 0) | 302 Found [http://localhost/degrees/1]
+
+
+Processing DegreesController#show (for 127.0.0.1 at 2010-06-16 17:56:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mDegree Load (0.1ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/show
+Completed in 6ms (View: 2, DB: 0) | 200 OK [http://localhost/degrees/1]
+
+
+Processing DegreesController#edit (for 127.0.0.1 at 2010-06-16 17:56:49) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/degrees
+Rendering degrees/edit
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/degrees/1/edit]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateDegrees (20100616232253)
+Migrating to CreateGraduates (20100616235826)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE TABLE "graduates" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "year_of_graduation" integer, "degree_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100616235826')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("degrees")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("graduates")[0m
+
+
+Processing GraduatesController#index (for 127.0.0.1 at 2010-06-16 18:00:02) [GET]
+  [4;36;1mGraduate Load (0.3ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/graduates]
+
+
+Processing GraduatesController#new (for 127.0.0.1 at 2010-06-16 18:00:09) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/graduates/new]
+
+
+Processing GraduatesController#index (for 127.0.0.1 at 2010-06-16 18:01:35) [GET]
+  [4;35;1mGraduate Load (0.4ms)[0m   [0mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 7ms (View: 1, DB: 0) | 200 OK [http://localhost/graduates]
+  [4;36;1mDegree Load (0.3ms)[0m   [0;1mSELECT * FROM "degrees" [0m
+  [4;35;1mDegree Load (0.2ms)[0m   [0mSELECT * FROM "degrees" [0m
+  [4;36;1mDegree Load (0.3ms)[0m   [0;1mSELECT * FROM "degrees" [0m
+
+
+Processing GraduatesController#index (for 127.0.0.1 at 2010-06-16 18:08:21) [GET]
+  [4;36;1mGraduate Load (0.3ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 5ms (View: 1, DB: 0) | 200 OK [http://localhost/graduates]
+
+
+Processing GraduatesController#new (for 127.0.0.1 at 2010-06-16 18:08:23) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+  [4;35;1mDegree Load (0.2ms)[0m   [0mSELECT * FROM "degrees" [0m
+Completed in 18ms (View: 14, DB: 0) | 200 OK [http://localhost/graduates/new]
+
+
+Processing GraduatesController#new (for 127.0.0.1 at 2010-06-16 18:08:43) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+  [4;36;1mDegree Load (0.2ms)[0m   [0;1mSELECT * FROM "degrees" [0m
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/graduates/new]
+
+
+Processing GraduatesController#create (for 127.0.0.1 at 2010-06-16 18:08:57) [POST]
+  Parameters: {"commit"=>"Create", "graduate"=>{"year_of_graduation"=>"1995", "degree_id"=>"1", "last_name"=>"Subramaniam", "first_name"=>"Venkat"}, "authenticity_token"=>"f6/1dLyZffKBcMdz1bNzCd5qsQYHU7VNzV900kgvQeQ="}
+  [4;35;1mGraduate Create (0.3ms)[0m   [0mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-17 00:08:57', 1995, 1, '2010-06-17 00:08:57', 'Subramaniam', 'Venkat')[0m
+Redirected to http://localhost:3000/graduates/1
+Completed in 11ms (DB: 0) | 302 Found [http://localhost/graduates]
+
+
+Processing GraduatesController#show (for 127.0.0.1 at 2010-06-16 18:08:57) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mGraduate Load (0.1ms)[0m   [0;1mSELECT * FROM "graduates" WHERE ("graduates"."id" = 1) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 9ms (View: 5, DB: 0) | 200 OK [http://localhost/graduates/1]
+
+
+Processing GraduatesController#index (for 127.0.0.1 at 2010-06-16 18:09:03) [GET]
+  [4;35;1mGraduate Load (1.2ms)[0m   [0mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+Completed in 16ms (View: 9, DB: 1) | 200 OK [http://localhost/graduates]
+
+
+Processing GraduatesController#index (for 127.0.0.1 at 2010-06-16 18:09:52) [GET]
+  [4;36;1mGraduate Load (0.3ms)[0m   [0;1mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+
+ActionView::TemplateError (undefined method `name' for #<Graduate:0x1040c1c50>) on line #16 of app/views/graduates/index.html.erb:
+13:     <td><%=h graduate.first_name %></td>
+14:     <td><%=h graduate.last_name %></td>
+15:     <td><%=h graduate.year_of_graduation %></td>
+16:     <td><%=h graduate.name %></td>
+17:     <td><%= link_to 'Show', graduate %></td>
+18:     <td><%= link_to 'Edit', edit_graduate_path(graduate) %></td>
+19:     <td><%= link_to 'Destroy', graduate, :confirm => 'Are you sure?', :method => :delete %></td>
+
+    app/views/graduates/index.html.erb:16
+    app/views/graduates/index.html.erb:11:in `each'
+    app/views/graduates/index.html.erb:11
+    app/controllers/graduates_controller.rb:7:in `index'
+
+Rendered rescues/_trace (37.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing GraduatesController#index (for 127.0.0.1 at 2010-06-16 18:11:27) [GET]
+  [4;35;1mGraduate Load (0.4ms)[0m   [0mSELECT * FROM "graduates" [0m
+Rendering template within layouts/graduates
+Rendering graduates/index
+  [4;36;1mDegree Load (0.3ms)[0m   [0;1mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Completed in 73ms (View: 15, DB: 1) | 200 OK [http://localhost/graduates]
+
+
+Processing GraduatesController#edit (for 127.0.0.1 at 2010-06-16 18:12:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mGraduate Load (0.3ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 1) [0m
+Rendering template within layouts/graduates
+Rendering graduates/edit
+Completed in 15ms (View: 11, DB: 0) | 200 OK [http://localhost/graduates/1/edit]
+
+
+Processing GraduatesController#new (for 127.0.0.1 at 2010-06-16 18:15:46) [GET]
+Rendering template within layouts/graduates
+Rendering graduates/new
+  [4;36;1mDegree Load (0.2ms)[0m   [0;1mSELECT * FROM "degrees" [0m
+Completed in 100ms (View: 15, DB: 0) | 200 OK [http://localhost/graduates/new]
+
+
+Processing GraduatesController#create (for 127.0.0.1 at 2010-06-16 18:15:47) [POST]
+  Parameters: {"commit"=>"Create", "graduate"=>{"year_of_graduation"=>"", "degree_id"=>"1", "last_name"=>"", "first_name"=>""}, "authenticity_token"=>"f6/1dLyZffKBcMdz1bNzCd5qsQYHU7VNzV900kgvQeQ="}
+  [4;35;1mDegree Load (0.2ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/graduates
+Rendering graduates/new
+  [4;36;1mDegree Load (0.3ms)[0m   [0;1mSELECT * FROM "degrees" [0m
+Completed in 26ms (View: 16, DB: 0) | 200 OK [http://localhost/graduates]
+
+
+Processing GraduatesController#create (for 127.0.0.1 at 2010-06-16 18:16:02) [POST]
+  Parameters: {"commit"=>"Create", "graduate"=>{"year_of_graduation"=>"", "degree_id"=>"1", "last_name"=>"Johnson", "first_name"=>"Bob"}, "authenticity_token"=>"f6/1dLyZffKBcMdz1bNzCd5qsQYHU7VNzV900kgvQeQ="}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/graduates
+Rendering graduates/new
+  [4;36;1mDegree Load (0.2ms)[0m   [0;1mSELECT * FROM "degrees" [0m
+Completed in 21ms (View: 10, DB: 0) | 200 OK [http://localhost/graduates]
+
+
+Processing GraduatesController#create (for 127.0.0.1 at 2010-06-16 18:16:09) [POST]
+  Parameters: {"commit"=>"Create", "graduate"=>{"year_of_graduation"=>"1900", "degree_id"=>"1", "last_name"=>"Johnson", "first_name"=>"Bob"}, "authenticity_token"=>"f6/1dLyZffKBcMdz1bNzCd5qsQYHU7VNzV900kgvQeQ="}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+Rendering template within layouts/graduates
+Rendering graduates/new
+  [4;36;1mDegree Load (0.3ms)[0m   [0;1mSELECT * FROM "degrees" [0m
+Completed in 19ms (View: 10, DB: 0) | 200 OK [http://localhost/graduates]
+
+
+Processing GraduatesController#create (for 127.0.0.1 at 2010-06-16 18:16:15) [POST]
+  Parameters: {"commit"=>"Create", "graduate"=>{"year_of_graduation"=>"2010", "degree_id"=>"1", "last_name"=>"Johnson", "first_name"=>"Bob"}, "authenticity_token"=>"f6/1dLyZffKBcMdz1bNzCd5qsQYHU7VNzV900kgvQeQ="}
+  [4;35;1mDegree Load (0.1ms)[0m   [0mSELECT * FROM "degrees" WHERE ("degrees"."id" = 1) [0m
+  [4;36;1mGraduate Create (0.2ms)[0m   [0;1mINSERT INTO "graduates" ("created_at", "year_of_graduation", "degree_id", "updated_at", "last_name", "first_name") VALUES('2010-06-17 00:16:15', 2010, 1, '2010-06-17 00:16:15', 'Johnson', 'Bob')[0m
+Redirected to http://localhost:3000/graduates/2
+Completed in 14ms (DB: 0) | 302 Found [http://localhost/graduates]
+
+
+Processing GraduatesController#show (for 127.0.0.1 at 2010-06-16 18:16:15) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mGraduate Load (0.2ms)[0m   [0mSELECT * FROM "graduates" WHERE ("graduates"."id" = 2) [0m
+Rendering template within layouts/graduates
+Rendering graduates/show
+Completed in 83ms (View: 4, DB: 0) | 200 OK [http://localhost/graduates/2]
