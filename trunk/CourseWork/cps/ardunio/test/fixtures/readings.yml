@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  station_id: 1
+  temperature: 1.5
+  moisture: 1.5
+
+two:
+  station_id: 1
+  temperature: 1.5
+  moisture: 1.5
