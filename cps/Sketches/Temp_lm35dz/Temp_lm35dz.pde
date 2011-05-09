@@ -6,11 +6,28 @@ http://creativecommons.org/license/cc-gpl
 
 int pin = 0; // analog pin
 int pin1= 2; //analog pin
-int tempc = 0,tempf=0; // temperature variables
-int samples[8]; // variables to make a better precision
-int maxi = -100,mini = 100; // to start max/min temperature
-int i;
-int moisture;
+
+
+int getTemperature()
+{
+    int samples[8];  
+    int tempc = 0;
+    int i;
+    for(i = 0; i<=7;i++)
+    { // gets 8 samples of temperature
+    
+      samples[i] = ( 3.27 * analogRead(pin) * 100.0) / 1024.0;
+      tempc = tempc + samples[i];
+      delay(1000);
+    }
+    
+    tempc = tempc/8.0; // better precision
+}
+
+int getMoisture()
+{
+  return analogRead(pin1);
+}
 
 void setup()
 {
@@ -21,28 +38,18 @@ void loop()
 {
   
   
-for(i = 0; i<=7;i++){ // gets 8 samples of temperature
-  
-  samples[i] = ( 3.27 * analogRead(pin) * 100.0) / 1024.0;
-  tempc = tempc + samples[i];
-  delay(1000);
 
-}
+int tempc = getTemperature();
 
-moisture = analogRead(pin1);
+int moisture = getMoisture();
 
-tempc = tempc/8.0; // better precision
-tempf = (tempc * 9)/ 5 + 32; // converts to fahrenheit
-
-//if(tempc > maxi) {maxi = tempc;} // set max temperature
-//if(tempc < mini) {mini = tempc;} // set min temperature
-
-Serial.print("@");
+Serial.print("$");
 Serial.print("1");
-Serial.print("|");
+Serial.print("#");
 Serial.print(tempc,DEC);
-Serial.print("|");
+Serial.print("#");
 Serial.print(moisture,DEC);
+Serial.print("@");
 
 tempc = 0;
 
