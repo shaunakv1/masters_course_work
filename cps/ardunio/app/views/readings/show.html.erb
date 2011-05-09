@@ -1,0 +1,18 @@
+<p>
+  <b>Station:</b>
+  <%=h @reading.station_id %>
+</p>
+
+<p>
+  <b>Temperature:</b>
+  <%=h @reading.temperature %>
+</p>
+
+<p>
+  <b>Moisture:</b>
+  <%=h @reading.moisture %>
+</p>
+
+
+<%= link_to 'Edit', edit_reading_path(@reading) %> |
+<%= link_to 'Back', readings_path %>
