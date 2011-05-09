@@ -22,6 +22,8 @@ int getTemperature()
     }
     
     tempc = tempc/8.0; // better precision
+    
+    return tempc;
 }
 
 int getMoisture()
