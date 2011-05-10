@@ -1,8 +1,58 @@
-<p>
-  <b>Name:</b>
-  <%=h @station.name %>
-</p>
+<div align = "center">
+<h1><%=h @station.name %></h1>
+<h2>Room Temperature: <%=h ((@reading.temperature * 9)/ 5 + 32)  %>°F</h1>
+<h2>Soil Moisture   : <%=h @reading.moisture %></h1>
+<h3>Updated <%=h @reading.human_time %></h3>
+</div>
 
-
-<%= link_to 'Edit', edit_station_path(@station) %> |
+<div id = "chart" align = "center"></div>
+<div id = "chart2" align = "center"></div>
+<%= Seer::init_visualization -%>
+<%= Seer::visualize(
+      @sensors, 
+      :as => :line_chart,
+      :in_element => 'chart',
+      :series => {
+        :series_label => "Temperature for last #{@graph_interval} Hours",
+        :data_label => 'graph_time',
+        :data_method => 'temp_in_f',
+        :data_series => @series
+      },
+      :chart_options => {
+        :height => 300,
+        :width => 1000,
+        :axis_font_size => 10,
+        :colors => ['#0099CC','#990000','#009900'],
+        :title => "",
+        :point_size => 0,
+        :line_size => 2,
+        :title_y => "Room Temperature in °F",
+        :smooth_line => "true"
+        
+      }
+     )
+ -%>
+ <%= Seer::visualize(
+      @sensors, 
+      :as => :line_chart,
+      :in_element => 'chart2',
+      :series => {
+        :series_label => "Moisture for last #{@graph_interval} Hours",
+        :data_label => 'graph_time',
+        :data_method => 'moisture',
+        :data_series => @series
+      },
+      :chart_options => {
+        :height => 300,
+        :width => 1000,
+        :axis_font_size => 12,
+        :colors => ['#F68B1F','#990000','#009900'],
+        :title => "",
+        :point_size => 0,
+        :line_size => 2,
+        :title_y => "Soil Moisture in Units",
+        :smooth_line => "true",
+      }
+     )
+ -%>
 <%= link_to 'Back', stations_path %>

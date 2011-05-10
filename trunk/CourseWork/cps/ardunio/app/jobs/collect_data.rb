@@ -2,7 +2,7 @@ require 'reading'
 require 'serialport'
 
  #params for serial port
-  port_str = "COM3"  #may be different for you
+  port_str = "COM4"  #may be different for you
   baud_rate = 57600
   data_bits = 8
   stop_bits = 1
@@ -28,43 +28,62 @@ def read_sp
   end
   
   reading.strip!
-  reading
+  if (reading_is_valid?(reading))
+    reading
+  else
+    ""
+  end
+
+end
+
+def reading_is_valid? (reading)
+  valid = true;
+
+  valid = false if !reading.start_with?("$")
+  valid = false if !reading.end_with?("@")
+  valid = false if reading.count('#') < 3
+
+  valid
 end
 
 def start_collecting
  
   #$1#22#141@
   puts "Starting.."
+  stations = [1,2]
   while true do
       
-    @@sp.write "$#2#temp#moist@"
-    sleep 1.0
-    reading = read_sp
-    puts "Raw:#{reading}"
+    stations.each do |stat|
 
-    if !reading.empty?
-    	reading.chop!
-      reading.slice!(0)
-      reading.slice!(0)
-      params = reading.split("#")
-      #puts "processed: 1:#{params[0]} 2:#{params[1]} 3: #{params[2]}"
-      
-    	puts Time.now
-      puts "ID = #{params[0]}"    
-    	puts "Temperature = #{params[1]}"
-    	puts "Moisture = #{params[2]}"
-    	puts "adding to db.."
+      @@sp.write "$##{stat}#temp#moist@"
+      sleep 1.0
+      reading = read_sp
+      puts "Raw:#{reading}"
 
-      reading = Reading.new
-    	reading.station_id = params[0]
-    	reading.temperature = params[1]
-    	reading.moisture = params[2]
-    	reading.created_at = Time.now + 5.hours
-    	reading.save
-    	puts "done.."
-    	puts "------------------------"
-     end
-    sleep 5.0
+      if !reading.empty?
+      	reading.chop!
+        reading.slice!(0)
+        reading.slice!(0)
+        params = reading.split("#")
+        #puts "processed: 1:#{params[0]} 2:#{params[1]} 3: #{params[2]}"
+        
+      	puts Time.now
+        puts "ID = #{params[0]}"    
+      	puts "Temperature = #{params[1]}"
+      	puts "Moisture = #{params[2]}"
+      	puts "adding to db.."
+
+        reading = Reading.new
+      	reading.station_id = params[0]
+      	reading.temperature = params[1]
+      	reading.moisture = params[2]
+      	reading.created_at = Time.now + 5.hours
+      	reading.save
+      	puts "done.."
+      	puts "------------------------"
+       end
+      sleep 5.0
+    end
   end
 
   @@sp.close

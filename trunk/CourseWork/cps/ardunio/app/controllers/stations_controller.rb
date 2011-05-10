@@ -2,12 +2,8 @@ class StationsController < ApplicationController
   # GET /stations
   # GET /stations.xml
   def index
-    @graph_interval = 2 # hours
-    @station = Station.find(1)
-    @reading = @station.readings.first(:order => 'created_at DESC')
-    @sensors = [@station]
-    @series = @sensors.map{|w| w.readings.all(:order => "created_at", :conditions =>  {:created_at => Time.now.utc-@graph_interval.hours...Time.now.utc} )}
-  
+    @stations = Station.all
+   
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @stations }
@@ -18,7 +14,11 @@ class StationsController < ApplicationController
   # GET /stations/1.xml
   def show
     @station = Station.find(params[:id])
-
+    @graph_interval = 2 # hours
+    @reading = @station.readings.first(:order => 'created_at DESC')
+    @sensors = [@station]
+    @series = @sensors.map{|w| w.readings.all(:order => "created_at", :conditions =>  {:created_at => Time.now.utc-@graph_interval.hours...Time.now.utc} )}
+  
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @station }
