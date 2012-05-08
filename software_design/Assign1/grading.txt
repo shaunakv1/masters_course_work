@@ -1,0 +1,20 @@
+Assignment 1 Grading.
+
+Program works (20pts): 
+
+Code quality (20 pts):
+
+Test quality (20 pts):
+Positive, negative, and exception tests.
+
+Test coverage (20 pts): -5
+GameController has only 88% line coverage and 66% branch coverage
+ScoreCalculator has only 94% line coverage and 80% branch coverage
+SpellChecker has only 70% line coverage
+
+Overall quality (20 pts): -2
+Design quality, organization, etc.
+Some of the responsibilities (like determining palindrome and then
+how it is communicated for score calculation) are misplaced, overburdening (making less cohesive) some classes.
+
+Total (100pts): 93

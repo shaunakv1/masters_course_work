@@ -1,0 +1,142 @@
+04/07/10 05:46 PM MT
+
+FileWriterTest:
+Remove getContents() method from fileWriter. 
+When I said in the earlier review
+"Remove getWrittenString. This is not the responsibility of 
+FileWriter." if you rename that method instead of removing,
+the problem does not go away. You need to pay attention
+to review comments and follow. Otherwise, you are wasting
+your time and mine.
+
+FileWriter:
+filePath = ".\\build\\" + fileName; 
+This is a bad idea. 
+In the previous review I said "By asking your test to create the file"
+so, your test should give this path, not your FileWriter. Why should
+your FileWriter depend on the build directory? Does that make sense?
+
+Also, don't use \\. Java is platform neural. Use forward slash instead
+of \\.
+
+Once you address the above, you will notice there is a lot common
+between StringWriter and FileWriter. Create an abstract class or
+interface that is common to the two. You will also notice
+there is a lot common between StringWriterTest and FileWriterTest.
+Create an abstract class WriterTest that has common code from the
+two.
+
+Ask for review if you get stuck at this step.
+
+-----------------------------------------------------------------------
+
+04/06/10 05:11 AM MT
+
+Run ant, then run ant clean. Notice how it leaves behind
+testfile.txt. By asking your test to create the file within the
+build directory, you can have this cleaned up when clean is run.
+
+StringWriterTest:
+protected void setUp() throws Exception
+to
+protected void setUp()
+
+StringWriter:
+Remove closed() method. You don't need it.
+
+FileWriterTest:
+
+Write a test that deals with a pre-existing file.
+
+FileWriter:
+private File file; remove
+
+Make fields private.
+
+Don't suppress exceptions. Propagate them up the chain.
+
+You already have a BufferedWriter created in the constructor.
+In write, simply use it, why are you creating another one?
+
+Remove getWrittenString. This is not the responsibility of 
+FileWriter.
+
+Remove public boolean closed()
+
+In close, you need to close the BufferedWriter.
+
+-----------------------------------------------------------------------
+
+04/05/10 09:19 PM MT
+
+Remove Writer empty directory within the Writer directory.
+
+StringWriterTest:
+
+Remove blank lines in the beginning or end of method body within each 
+method.
+
+Add a blank line between each method.
+
+StringWriter:
+Remove constructor, initialize field in place instead.
+
+Remove isClosed() method.
+
+Proceed to writing test and code for FileWriter.
+
+-----------------------------------------------------------------------
+
+04/05/10 06:38 AM MT
+
+Remove buildGrading.xml. Only provide build.xml.
+
+Rename testIfStringWriterCreatesABlankStringInitially to
+testCreateStringWriter.
+
+Rename testIfStringWriterWritesAStringAsExpected
+to testWrite
+
+stringWriter.write("Class testing 123");
+Make this simple, why not just stringWriter.write("test 1");
+Less noise.
+
+Rename testContentsBeforeAndAfterClosing to
+testWriteBeforeClose (that is what you are doing).
+Remove String expected=stringWriter.getWrittenString();
+
+Rename testCloseAndWrite testWriteAfterClose
+Remove String expected="test";
+
+StringWriter:
+Change
+boolean closed = false;
+to
+boolean closed;
+
+Make writtenString a StringBuilder instead of String.
+
+In write, simply use closed instead of isClosed().
+
+Remove isClosed method.
+
+-----------------------------------------------------------------------
+
+04/02/10 09:51 PM MT
+
+Nice to see you have provided build.xml!
+
+Specifically I mentioned no main. Remove TestCode.
+
+You have taken a big leap before asking for the first review.
+Not a good idea. I specifically asked you to ask for review
+after a small step.
+
+StringWriterTest
+
+writer.write("test", null);  Why two parameters?
+
+What is AOperator? Get rid of Operator, AOperator, etc.
+Only send me test for StringWriter and StringWriter class for review.
+
+-----------------------------------------------------------------------

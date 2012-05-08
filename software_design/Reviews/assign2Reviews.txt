@@ -1,0 +1,68 @@
+03/25/10 07:13 AM ET
+
+(a) 9 or is the name incorrect and need to be fixed?
+
+Code:
+
+Glad to see you provide the build.xml.
+
+testIfFetchTemperatureReturnsTemperatureInfo
+assertNotNull is not useful here. Check for expected temperature
+value.
+
+Does your code have some of the smells you pointed out in the original code.
+
+Make the method non static.
+Focus on TemperatureFinderTest and build the rest of the code
+from it.
+
+TemperatureProviderTest Get rid of this.
+TemperatureProvider Get rid of this, this is heavily coupled
+and will not help solve the problem on hand.
+
+TemperatureFinder
+main(...) Why?
+
+-----------------------------------------------------------------------
+
+03/24/10 08:56 AM ET
+
+(a)
+2. How does this related to cohesion?
+4. How does the reason you give related to immobility?
+
+(b) OK
+(c) OK
+
+Nothing checked in - high risk.
+
+-----------------------------------------------------------------------
+
+03/10/10 08:22 PM MT
+
+(a) You are talking about what's missing (lack of) rather than
+what is present.
+
+(b) Good
+
+(c) Show calculation of A, I, and D'.
+
+-----------------------------------------------------------------------
+
+03/08/10 09:54 AM ET
+
+(a)
+1. Don't suggest solutions here. Stay with identifying the smell.
+There may be several solutions, so don't allow your mind to jump
+and short circuit the thinking. Focus on smell and what's the 
+disadvantage here.
+
+2. This lacks cohesion itself. :) You say several things here. Instead
+say one thing and expand. Then you can say other things in separate
+points/paragraphs. All good thing, but clumped together.
+
+7. I like this point. Good one.
+
+(b) Explain each a bit more cohesively and consistently.
+
+-----------------------------------------------------------------------

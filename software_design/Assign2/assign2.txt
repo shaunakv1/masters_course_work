@@ -1,0 +1,379 @@
+Assignment 2: Due 11:59PM Friday March 26th
+
+I've provided sample code for Java, C#, and C++ (along with
+the necessary jar, dll, and lib, respectively. If you will use
+a language other than these, let me know and I will provide
+the code in that language. If you plan to use some other language 
+on the JVM (like Groovy/Scala) or some other language on the .NET 
+platform (like VB.NET, IronRuby, etc.) then the given binary files
+(jar or dll) are usable with those as well).
+
+You have been provided a piece of code that determines the current
+temperature of a given city (cities are identified using a unique
+id). The code uses third party classes to actually determine the
+temperature. There are three such third party services (and so three
+classes). Each one has a distinctive characteristic:
+
+Service Provider 1 - this provider of service is free, that is, there 
+is no cost to accessing this service. However, this service is quite
+unreliable. It fails about 50% of the time.
+
+Service Provider 2 - this provider of service charges fee. The 
+reliability/availability is about 80% of the time.
+
+Service Provider 3 - this provider is expensive, but has very high
+availability.
+
+The code that's provided to you uses these three services in such a way
+as to minimize the cost of getting the temperature. It first tries to
+get the temperature from provider 1, if that fails, tries provider 2,
+and if that also fails, tries provider 3. We just learned that there
+may be other providers that we could use with variable availability
+and cost. The code given could be modified to accommodate for that
+extension or we could make it better.
+
+Todo:
+
+1. Answer the following questions first:
+
+(a). What are the design and code smells in the given code?
+
+Answer:
+
+				1. Very high coupling.  The providers are directly called from the TemperetureFinder Class. 
+
+				2.  If new providers come in some time later, the  "fetchTemperature(int cityID)" method will have to be modified each time. This is violiting OCP  
+				
+				3.  The Method "fetchTemperature(int cityID) must be responsible for getting temperature given an ID and not for managing changing providers. 
+				
+				4.  The code violates the DRY principle and basically same piece of code is repeated for each provider.
+				 
+				5. In a way YAGNI is also violated because either  use of Runtime exceptions  is unnecessary when even the code keeps the catch blocks blank.
+				
+				6.  OR No use for the "success" parameter when same thing can be achieved by writing calls for successive providers in the catch blocks.
+				
+				7.   Hard coding of provider variable and assigning the names for providers in code. Tomorrow if its required to change names or use a different language for provider names then the class will have to modified
+					 and will become non-cohesive.
+					 
+				8.  Not sure regarding this point as the requirement is not clear, but instead of returning a string from the method, its always a good idea to return an value-object will all required parameters, and let the 
+					 string formation be handled by some other class which is calling fetchTemperature method.  This will increase extensibility as the calling class can then do the string formation/formatting/language as it wants.
+					 
+				9.  Returning string is also violation of SRP  because fetchTemperature should just return temperature, as its name suggests. 
+				
+				10. There is also a hint of viscosity in this code as it is seems like a code written to get things done and not thinking about how to do them right as its creating all the above mentioned deign issues. 
+				
+
+(b). What design principles are being violated in the given code?
+
+Answer:
+				1. YAGNI : 
+							a. Use of boolean variable "success" is not necessary when Try-Catch blocks are present
+							b. Use of If-blocks is not required when Try-Catch blocks are present
+							b. Use of several runtime exceptions clauses is not necessary when boolean variable "success" 
+							   and If blocks are present.
+					
+								
+				2. DRY
+							a. Use of repeated identical If conditions
+							b. repetitive Try-catch Blocks
+							
+				
+				3. SRP: 
+							TemperatureFinder Class has multiple responsibilities:
+							
+							a. Managing provider switching in the method
+							b. Formatting the String in this method
+							
+				4. OCP:
+						This Class/method is violating the OCP  because it is clearly open for modification because as and when there are changes or addition in temperature service providers
+						this class will have to modified, when this could have been easily avoided by introducing a facade or interface. 
+				
+			
+
+
+(c). What is the value of A, I, and D' for the given code?
+(show calculation, not just final numbers)
+
+Answer:
+	
+	A= number of abstract classes/total number of classes;
+	I= Fan out/(Fan Out + Fan in )
+	D'= |A+I-1|	
+
+
+
+(i). default
+				number of abstract classes= 0 (No abstract classes)
+				number of classes = 1 (TemperatureFinder)
+				
+				Fan out= 3 (TemperatureProvider,com.provider2.TemperatureFinder,QueryTemperature)
+				Fan In = 0
+				
+				therefore, 
+A= Number of abstract classes/total number of classes;
+	=> A= 0/1=0;
+I=Fan out/ (Fan in +Fan out)
+	=> I= 3/(3+0)=1;
+			
+D'= |A+I-1|=> D'=|0+1-1|=0;
+
+Thus A=0, I=1,D'=0; 
+
+	
+
+
+(ii) com.provider1
+				
+				number of abstract classes= 0
+				number of classes = 1 (TemperatureProvider)
+				
+				Fan out= 0 
+				Fan In = 1 (TemperatureFinder)
+				
+
+			therefore,
+A= Number of abstract classes/total number of classes;
+ 	=> A=0/1=0;
+I=Fan out/( Fan in +Fan out )
+	=> I= 0/(0+1)=0;
+D'= |A+I-1|=> |0+0-1|= 1;
+
+Thus A=0, I=0, D'=1;
+		
+	
+(iii) com.provider2
+				
+				number of abstract classes= 0
+				number of classes = 1 (com.provider2.TemperatureFinder)
+				
+				Fan out= 0 
+				Fan In = 1 (TemperatureFinder)
+				
+A= Number of abstract classes/total number of classes;
+ 	=> A=0/1=0;
+
+I=Fan out/( Fan in +Fan out )
+	=> I= 0/(0+1)=0;
+						  
+D'= |A+I-1|=> |0+0-1|= 1;
+
+Thus A=0, I=0, D'=1;
+					  
+	
+
+
+(iv) com.provider3
+				
+				number of abstract classes= 0
+				number of classes = 1 (QueryTemperature)
+				
+				Fan out= 0 
+				Fan In = 1 (TemperatureFinder)
+				
+A= Number of abstract classes/total number of classes;
+ 	=> A=0/1=0;
+
+I=Fan out/( Fan in +Fan out )
+	=> I= 0/(0+1)=0;
+						  
+D'= |A+I-1|=> |0+0-1|= 1;
+
+Thus A=0, I=0, D'=1;
+				
+
+Thus, OVERALL D'= Average of all the Dprime Values=> 
+(0+1+1+1)/4= (3/4)=0.75
+
+2. Now, ignore the code given (just leave it alone) and start with a TDD approach to create a piece of code that uses the three classes to 
+	provide the capability of the code you discarded. Remember, you are
+	still required to use the three classes (that are in the jar/dll/lib).
+
+
+
+
+
+3. After you finish your new code with hopefully a better design,
+answer the following questions:
+
+
+
+(d) Explain how your new design is better than the one given to you?
+
+  (i) The instability of the packages Provider and Finder are 0.6 and 0.5 respectively.(Calculations shown in question (f)). This clearly shows that the given code is neither too instable(I=1) nor is it too stable(I=0) to the extent of being rigid. This clearly shows the design followed has proper stability.
+
+  (ii) The D' of the design excluding the given packages in library is just 0.05(calculation explained in question (f)). We have ensured the removal of a majority of smells in the original default code and still ensured that the D' value remains very low.This has a clear effect on the overall D' value which has reduced from 0.75 to 0.525. This after following all the major principles and removing the smells existing in the given code.
+
+  (iii) The given code had very high coupling and very low cohesion as justified in the first answer and now we have ensured that coupling is low and at the same time cohesion is high as each class has its own single responsibility.
+
+  (iv) Extensibility: The design ensures extensibility at minimum cost. For example, suppose that a new provider has come into picture, say provider4.
+       In order to accomodate this provider , all we have to do is add the provider4 class into the provider package and add a new property. Nothing in the code requirs modification.
+
+  (v) The design has ensured that all the unnecessary fields in the temperatureFinder class have been eliminated.
+      The temperatureFinder also has just one method and one constructor.
+
+  (vi) All major Design principals like YAGNI, DRY, SRP, OCP etc are ensured.
+
+  (vii) By using the Factory Pattern along with Reflection APIs the design has implemented dependency Inversion and high level of de-Coupling
+   
+   (viii) Because The given classes in library were not open for modification three corresponding wrapper classes were introduced to get all Providers under one interface this aiding Dependency Inversion to ensure loose coupling.
+
+
+
+(e) What design principles did you follow in your new design?
+
+DIP: Dependency Inversion Principle has been followed in order to make the design better. 
+The temperatureFinder now depends on the IAbstractFactory and the Iprovider and no longer is dependent on the three com.provider packages directly.
+The three com.provider packages now are used in just three wrapper classes within the provider package.
+ The direction of dependency has clearly been reversed and hence conforms the the definition of Dependency Inversion Principle
+
+OCP: The open/closed principle is no longer being violated. The code is now extensible without having to modify the existing classes and all we have to do is to introduce new code. For example, in order to provide a new provider(say provider4), we need to introduce the provider4 class into the provider package and add provider4 to the properties but need not modify any of the given classes anywhere.
+This clearly conforms to the definition of the OCP.
+
+DRY: The code is not repetitive anymore. There are no repetitive try/catch blocks nor are there any if statements that are repeated like in the original version. And there are no unnecessary repetitions in the given code to violate the princple. Thus, this clearly conforms to the DRY principle as well.
+
+YAGNI: The given code had a lot of stuff that wasn't needed.
+The design followed ensures that none of that is repeated and only what was necessary was followed throughout. Thus there is nothing in the new code that can be justified as "You aint gonna need it" .
+
+SRP: Each class has its own responsibilty and no extra complication and multiple tasks this maintaining high level of cohesion.
+ 
+
+(f) What is the value of A, I, and D' for your new design?
+(show calculation, not just final numbers)
+
+(i) Finder:
+			number of abstract classes=0
+			number of classes=1(TemperatureFinder)
+A= Number of Abstract Classes/ total number of classes
+=> A=0/1
+=> A=0;
+
+Fan out=2 (Factory package and Provider Package)
+
+Fan in=0
+
+=> I= Fan Out/ (Fan in+Fan out) = 2/(0+2)= 1
+
+Thus D'= |A+I-1| =|0+1-1| =0
+D' of Finder package=0.
+
+
+(ii) Factory:
+
+    				number of abstract classes=1 (AbstractProviderFactory)
+				number of classes=2 (AbstractProviderFactory, ProviderFactory)
+
+Thus A= number of abstract classes/ total number of classes
+=> A=1/2=0.5
+
+=> A=0.5
+
+Fan out= 1 (Provider Package)
+
+Fan in= 1 (Finder Package)
+
+=> I= Fan out/ (Fan in+ Fan out) = 1/(1+1) =1/2=0.5
+
+=> I=0.5
+
+Thus D'=|A+I-1|=|0.5+0.5-1|=0
+
+=> D' of Factory package=0
+
+
+
+(iii)  Provider   
+			number of abstract classes= 1 (Iprovider Interface)
+			number of classes=4 [IProvider, Provider1, Provider2, Provider3]
+
+            Thus, A=number of abstract classes/total number of classes=1/4=0.25
+
+=> A=0.25
+
+Fan out= 3 ((com.provider2 package), (com.provider3 package),(com.provider1 package))
+ 
+Fan in= 2  ((TemperatureFinder package), (Factory package))
+
+Thus I= Fan out/ (Fan in+ Fan out) = 3/(3+2)=3/5=0.6
+
+=> I=0.6 
+
+Thus D'=|A+I-1| = |0.25+0.6-1|=0.15
+
+D' of Provider Package=0.15.
+
+    
+
+(iv)com.provider1
+				
+				number of abstract classes= 0
+				number of classes = 1 (TemperatureProvider)
+				
+				Fan out= 0 
+				Fan In = 1 (Provider package)
+				
+
+			therefore,
+A= Number of abstract classes/total number of classes;
+ 	=> A=0/1=0;
+I=Fan out/( Fan in +Fan out )
+	=> I= 0/(0+1)=0;
+D'= |A+I-1|=> |0+0-1|= 1;
+
+Thus A=0, I=0, D'=1;
+		
+	
+(v) com.provider2
+				
+				number of abstract classes= 0
+				number of classes = 1 (com.provider2.TemperatureFinder)
+				
+				Fan out= 0 
+				Fan In = 1 (Provider Package)
+				
+A= Number of abstract classes/total number of classes;
+ 	=> A=0/1=0;
+
+I=Fan out/( Fan in +Fan out )
+	=> I= 0/(0+1)=0;
+						  
+D'= |A+I-1|=> |0+0-1|= 1;
+
+Thus A=0, I=0, D'=1;
+					  
+	
+
+
+(vi) com.provider3
+				
+				number of abstract classes= 0
+				number of classes = 1 (QueryTemperature)
+				
+				Fan out= 0 
+				Fan In = 1 (Provider Package)
+				
+A= Number of abstract classes/total number of classes;
+ 	=> A=0/1=0;
+
+I=Fan out/( Fan in +Fan out )
+	=> I= 0/(0+1)=0;
+						  
+D' = |A+I-1|=> |0+0-1|= 1;
+
+Thus A=0, I=0, D'=1;
+
+
+
+
+Thus overall D' value will now be 
+
+Finder Package=0
+Factory Package=0
+Provider Package=0.15
+com.provider1=1
+com.provider2=1
+com.provider3=1
+
+
+0+0+0.15+1+1+1=(3.15)/6=0.525
+
+D' overall=0.525 and has been reduced considerably.

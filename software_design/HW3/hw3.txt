@@ -1,0 +1,50 @@
+Homework #3 Due 11:59PM May 7th
+
+A class StringWriter writes to a String. A class FileWriter writes
+to a file. There are two tests TestStringWriter and TestFileWriter
+that were used to drive the design of the classes StringWriter
+and FileWriter, respectively. The two tests pretty much test the
+same thing, but on two different classes.
+
+1. What principle is being violated in the design above?
+
+ DRY(Don't Repeat Yourself) is the principle being violated in the design above. 
+The DRY principle states that "Every piece of knowledge must have a single, unambiguous authoritative representation within a system."
+The information above clearly indicates that we are writing two different classes TestStringWriter and TestFileWriter
+in order to perform the very same functionality. This violates the definition of DRY in that the same piece of knowledge
+is being repeated in two different places when it can actually be implemented at a single place.
+
+
+2. How would you fix it?  
+
+In order to fix the problem, we first write a Writer Interface that is common to both the FileWriter and the String Writer. We
+ then follow that up by writing an abstract class TestWriter that has the commmon functionality of both the 
+ TestStringWriter and TestFileWriter. However, in order to satisfy the problem statement we must let 
+ subclasses(TestStringWriter and TestFileWriter) decide which class to instantiate. 
+ 
+	For this to take place, we first start with creating two abstract methods inside the TestWriter namely createWriter() (with returns type being 
+	Writer Interface) and verifyContents(). Both these methods are overridden by the TestStringWriter and TestFileWriter.We create an instance of the Writer Interface 
+inside TestWriter and call createWriter() method which will return an instance of the corresponding TestFileWriter or TestStringWriter accordingly.
+We can then use this instance inside the test cases. 
+ This will clearly satisfy the problem statement and also prevent the violation of the DRY Principle.
+
+
+
+3. What design principles are you using in the above fix?
+ (a) DRY: We are clearly following the DRY principle to overcome the problem described in Answer 1. 
+ (b) DIP: By introducing an abstract class and letting the subclasses decide the instantiation, we are introducing the Concept of Dependency
+ Inversion principle. We are creating corresponding writer objects inside TestWriter without knowing their type.
+ (c) OCP: We are using the Open Closed Principle in that any new writer now included doesn't need any code modification of the TestWriter 
+ 	
+
+4. What design patterns are you using in the above fix?
+
+ The design pattern used in the above fix is Factory method Pattern. The definition of Factory Method Pattern is as follows:
+ "Define an interface for creating an object, but let the subclasses decide which class to instantiate. The Factory method lets a class defer instantiation to subclasses."
+ 
+ This is clearly what we are doing in the implementation to fix the problem. We are creating an abstract class TestWriter that has the common functionality for 
+	 and we then leave the instantiation to the subclasses TestFileWriter and TestStringWriter. 
+ 
+ 
+Total: 10pts
+

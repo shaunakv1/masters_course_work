@@ -1,0 +1,37 @@
+Assignment 2 Grading.
+
+Answer to (a) [5]:
+Answer to (b) [5]:
+Answer to (c) [5]:
+Answer to (d) [5]:
+Answer to (e) [5]:
+Answer to (f) [5]:
+
+All tests pass [10]:
+
+Test quality [10]: -10
+Does not drive the design.
+
+Using mocks [20]: -20
+
+Code quality [10]: -3
+
+for (int i = 1; i <= numberOfProviders; i++) eh? So 20th century.
+
+Design quality and structure [20]: -10
+
+ProviderFactory: YAGNI, don't suppress exceptions.
+AbstractProviderFactory: YAGNI
+
+TemperatureFinder:
+Too complex.
+Silly print statements vomits all over the code.
+Unnecessary complexity with properties.
+
+attempts++; Why should this be so complicated?!
+
+public int getAttempts() Why on earth would you write code that is
+totally irrelevant to the given problem. Do you have a test for
+this method? Not created TDD, a pure hack.
+
+Total [100]: 57

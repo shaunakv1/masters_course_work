@@ -1,0 +1,70 @@
+04/04/10 03:47 AM MT
+
+(d) Very nice job with these design options.
+
+(e) 
+You are duplicating what A and I are in each calculation.
+That is very redundant. You have said it once in (b).
+Now, simply show the calculations.
+
+In version 1, mediator package, you have a value I based on value of n 
+tending towards  zero. That's it, you have a numeric value of A and a 
+numeric value of I. Use these numeric values of A and I in calculating 
+D'. You should not have any n when calculating D'. Currently you have 
+considering n = 1, n=4, etc. Get rid of all that and use numeric values 
+you have of A and I that you have arrived at considering n is tending
+towards a higher value.
+
+In version 1, for components package, you have not reduced the value of
+A, it still has n. I see A = 1/(n + 1) you need to reduce it
+further for higher values of n. Same for I.
+
+For overall don't worry about tending towards, simply say what
+the value is (the value for higher n). This will clearly show you
+that your design 1, even though is a nice step, may not be a good one.
+Now you can argue (either here or in (f)) why this may not be a good 
+design.
+
+(f) I see you have discussed version 3 and 4, but compare each versions
+and say why you decided to consider the next.
+
+-----------------------------------------------------------------------
+
+04/03/10 07:59 AM MT
+
+(d) Use proper notation for inheritance vs. association.
+
+-----------------------------------------------------------------------
+
+04/02/10 09:40 PM MT
+
+(a) Good.
+
+(c) Good.
+
+(d) Use proper notation for inheritance vs. association.
+
+-----------------------------------------------------------------------
+
+03/31/10 05:14 AM MT
+
+(a) Good. Now get rid of those empty boxes below classes to reduce
+noise.
+
+(b) Good.
+
+(c) What does change have to do with ability to reuse (in ii).
+
+
+-----------------------------------------------------------------------
+
+03/30/10 05:41 AM MT
+
+(a) Get rid of the package box, it is constraining. Instead use
+a line to separate the two packages. Remove the description from
+hw2.txt, the picture should speak for itself.
+
+(b) Calculate at class level for dependencies that cross package
+boundaries.
+
+-----------------------------------------------------------------------

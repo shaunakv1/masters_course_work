@@ -1,0 +1,199 @@
+02/11/10 05:32 AM CT
+
+LetterCartTest
+Is this going to test Cart or Shelf? If it is doing to drive the
+design of Shelf, call it ShelfTest instead of Cart Test.
+
+setNumberOfSlots Why give this option. Should it not be 7 by default?
+generateEmptyShelf Should't this happen by default on construction?
+Do you need to call these two methods?
+
+getShelf() but you are in the shelf already. So what does get shelf 
+from shelf mean? A shelf contains another shelf?
+
+testShelfMinimumSlotEnforcement Oh that is so heavy weight. What
+do you really want to say here?
+
+Test with no assert is no test.
+
+hasValidCharacters is this the job of shelf to verify or the test to
+verify?
+
+InvalidShelfCapacityException extend RuntimeException.
+But, is this really needed?
+
+=======================================================================
+
+02/12/10 05:47 AM CT
+
+testIfAnySlotsAreBlankOnceShelfIsCreated
+Good, but can you make it concise. Like
+testShelfFilledOnCreate
+
+shelf.getShelf();
+
+How do you get a shelf from a shelf. Is this a recursive call
+or a trick? May be you meant shelf.getLetters() ?
+
+So, you can certainly get characters. But, why? Will it be simple
+to just keep strings and return strings (may be string builder)?
+
+testSelectLetterFromShelf, how is this different from the test
+above testIfAnySlotsAreBlankOnceShelfIsCreated?
+
+testIfSlotIsBlankedBeforeReFilling But why? Should the shelf not
+simply fill up that location with another character?
+
+fail();
+Missing a message for failure.
+
+Good start on the tests.
+
+Shelf: Too much code for the given tests to pass. Start by removing
+code until you can get to the least amount of code you need for
+the test. Or better, remove all the code in this class and
+start adding code (minimal) to get the tests pass (I recommend
+this second approach).
+
+public static void main(String[] args)
+Oh, what a smell. Poor shelf, it has to carry this burden. Get
+rid of this method.
+
+=======================================================================
+02/14/10 11:24 AM MT
+
+public void testSelectLetterFromShelf()
+{
+	Character ch = shelf.selectLetterAt(4);
+	assertTrue(Character.isLetter(ch));
+}
+
+You want to check the letter obtained was what you expected. Also
+check the letter was replaced properly.
+
+The following tests are redundant if you can take care of the above.
+
+public void testIfSlotIsBlankedBeforeReFilling()
+{
+	shelf.removeCharacterAt(4);
+	Character ch = shelf.selectLetterAt(4);
+	assertEquals(ch.charValue(), ' ');
+}
+
+public void testIfSlotIsRefilledImmediatelyAfterSelection()
+{
+	Character ch = shelf.selectLetterAt(3);
+	ch = shelf.selectLetterAt(3);
+	assertTrue(Character.isLetter(ch));
+}
+
+Shelf:
+Review to see which of these methods must be public.
+
+CartTest:
+
+assertTrue(ch== ' '); ugly, should be assertEquals('', ch);
+
+String aCart = cart.getLetters();
+
+aCart is really not a cart, but lettersInCart?
+
+The test
+public void testIfLetterAddedAsExpected()
+{
+	char someChar='s';
+	int someLocation=3;
+	cart.addLetter(someLocation, someChar);
+	String letters=cart.getLetters();
+	assertEquals(letters.charAt(someLocation), someChar);
+}
+
+can be
+
+public void testIfLetterAddedAsExpected()
+{
+	cart.addLetter(3, 's');
+	assertEquals('s', cart.getLetters());
+}
+
+Less noisy, easier and faster to read and understand.
+
+// TODO: Test if Spell check is running as soon as cart is modified
+should go in task list, not here.
+
+Is this test passing? testIfSpellCheckerIsRunningCorrect
+
+isCartAValidWord() => isWordInCartValid()
+
+=======================================================================
+02/16/10 09:35 AM MT
+
+Do me a favor. Organize your code like this
+
+src
+  - model (though I don't like this name model. Can you think of a better name for the package)
+      model classes
+  - util
+      unil class(es)
+
+test (notice this is not within src directory)
+  your tests classes
+
+Also I am having trouble compiling your code. It is complaining that
+the CartOverwriteException is not found.
+
+=======================================================================
+02/20/10 07:54 AM MT
+
+I have created build script. Run 
+ant
+from the command line in the directory where build.xml file is located.
+Make sure it passes with no errors.
+
+CartTest:
+In assertEquals is the first parameter expected or actual? Understand
+the API and use it as intended.
+
+Nice progression of negative tests.
+
+testIfSpellCheckerIsCorrect Should this really be a concern of the
+Cart. Think about separation of concern and cohesion. Is this better
+to belong here or elsewhere. In other words, think about when you
+care about right spelling?
+
+Split multiple independent asserts into different tests.
+
+testIfPalindromeCheckIsCorrect
+same comments as above.
+
+If you change
+private StringBuilder letters;
+to
+private StringBuilder letters = new StringBuilder("------");
+
+Then your constructor can be removed and your 
+blankTheCart can be simply letters = new StringBuilder("-------");
+
+Nice making methods public or private as appropriate.
+
+The code
+String tempString = new String(letters.toString());
+can be
+String tempString = letters.toString();
+
+See how we overwork ourselves in code.
+
+Score:
+How did that one line appears in this class without the test!
+
+SpellChecker: This one was dropped here by aliens for sure. You
+would not write this much code here without writing tests
+for SpellChecker.
+
+ShelfTest and Shelf:
+What happens if I call removeCharacterAt twice, one after the other.
+Why are both removeCharacterAt and selectLetterAt public?
+Is there a way to test for the random replacement of the letter?
+
+
+=======================================================================
