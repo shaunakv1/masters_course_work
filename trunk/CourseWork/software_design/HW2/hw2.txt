@@ -1,0 +1,416 @@
+HW2 Due 11:59PM Monday April 5, 2010
+
+Assume a class named Mediator is in a package named mediator. This 
+class depends on several components that are in a package named 
+components. Each of these classes depend on the Mediator.
+
+
+(a) Draw a picture of the above design
+
+packageDiagram.jpg is the file name of the diagram.
+
+
+
+
+(b) What is the value of A, I, and D' for each package and also overall D'.
+
+For mediator Package:
+
+A=number of abstract classes/ total number of classes
+
+number of abstract classes=0
+Total number of classes=1 (Mediator class)
+
+=> A=0/1=0
+
+I= fan out/(fan in +fan out)
+fan out= n. Since Mediator class in the mediator package depends on each of the concrete classes in components package.(n classes in components package C1....Cn)
+fan in= n. Since each class C1 through Cn in the components package depends on the Mediator class in the mediator package
+
+=> I= n/(n+n)=n/2n=1/2=0.5
+
+D' of mediator Package=|A+I-1|=|0+0.5-1|=0.5
+
+D' of mediator package=0.5
+
+
+For components Package:
+
+A=number of abstract classes/total number of classes.
+
+number of abstract classes=0
+Total number of classes=n
+=> A=0/n=0
+
+I=Fan out/(fan in+fan out)
+fan out= n Since each of the classes C1 through Cn in the components package depends on Mediator Class in the mediator package.
+fan in= n Since Mediator Class in the mediator package depends on each of the classes C1 through Cn in the components package
+
+=> I= n/(n+n) =n/2n=1/2=0.5
+
+D' of components Package=|A+I-1|=|0+0.5-1|=0.5
+
+D' of components package=0.5
+
+
+OVERALL D' = Average of D' of components and mediator packages.
+
+=> Overall D'=(0.5+0.5)/2 
+=> D'=0.5
+
+Overall D'=0.5
+
+
+
+(c) What is wrong with the above design? Explain the consequence.
+
+   (i) One of the major problems caused is the ripple/boomerang effect caused by the cyclic dependency. Modifying anything in either
+       of the packages will result in a series of changes one after another like a ripple.
+   (ii) It affects the reuse. This is because, for a class to be reused, we also need the class  that this class depends on.
+	There are several dependencies involved here. This makes reusing the code difficult.
+
+   (iii) Heavy coupling involved here that highly complicates the system. 
+ 
+
+
+(d) Redesign (show diagram)
+
+(i) packageDiagramRedesignedVersion1.jpg is one version
+(ii) packageDiagramRedesignedVersion2.jpg is the second version.
+
+(iii) packageDiagramRedesignedVersion3.jpg 
+(iv)  packageDiagramRedesignedVersion4.jpg 
+(v)   packageDiagramRedesignedVersion5.jpg
+
+
+(e) Recalculate A, I, and D' for each package and also overall D'.
+
+(i) Version1 :
+
+   mediator package:
+
+   A
+     number of abstract classes=0.
+	total number of classes=1 (Mediator class)
+  => A=0/1=0.
+
+   I
+	Fan out= 1 (Mediator depends on IComponents).
+	Fan in= n  (C1, C2....Cn).
+
+=> I=1/(1+n)   (Thus as n tends towards higher values, the value of I tends towards 0.
+Thus considering n as high, I=0.
+=> D'=|A+I-1| => |0+0 -1|=> 1
+
+Thus D'  for mediator=1
+
+
+  
+  components package:
+
+   A
+	number of abstract classes=1(IComponent).
+	total number of classes=n+1.
+
+=> A= 1/(n+1) 
+Thus as n tends towards a high value, A=1/n+1 => A tends towards 0.
+Thus A=0 for higher values of n.
+
+
+  I
+	Fan out= n
+	Fan in= 1
+  I=n/(n+1)
+
+Thus as n tends towards a high value, I=n/n+1 tends towards being 1.
+Thus I=1 for higher values of n.
+
+
+=> D'=|A+I-1|=|0+1-1|=0.
+
+=>Thus for components package D' = 0
+ 
+Thus overall D' for this design is (1+0)/2 =0.5
+
+
+Thus for this design as well, the D' tends to be 0.5 .
+
+----------------------------------------------------------------
+ 
+Version 2.
+
+ mediator package:
+
+   A
+     number of abstract classes=0.
+	total number of classes=1 (Mediator class)
+  => A=0/1=0.
+
+   I
+	Fan out= 1 (Mediator depends on IComponents).
+	Fan in= n  (C1, C2....Cn).
+
+=> I=1/(1+n) 
+Thus, as n tends towards higher values, I value tends towards 0.
+
+=> D'=|A+I-1| => |0+0-1|
+=> D'= 1 
+
+Thus for larger values of n, D' tends towards being 1.
+	
+
+  
+  components package:
+
+   A
+	number of abstract classes=0.
+	total number of classes=n
+
+=> A= 0/n=0
+
+  I
+	Fan out= 2n
+	Fan in= 0
+  I=2n/2n=1
+
+=> D'=|A+I-1|
+=> D'= |0+1-1| => 0
+D'=0. 
+Thus for components package D' = 0 
+  
+
+  icomponents package:
+
+   A
+=> number of abstract classes=1( IComponents).
+   total classes=1.
+=> A=1/1=1.
+  
+   I 
+    fan out=0
+    fan in= n+1
+=> I=0.
+
+Thus D'= |A+I-1|= |1+0-1|=0.
+
+
+
+
+
+Overall D'=> Average of all 3 packages.
+
+(1+0+0)/3=0.33
+
+
+Thus, the D' value for this design is 0.3
+
+
+---------------------------------------------------------------
+
+Version 3
+
+mediator package:
+
+A=
+
+Number of abstract classes= 1 (IMediator)
+
+Total no. of classes= 2.
+
+=>  A=(1/2) =0.5
+
+
+I 
+
+fan out = n (Mediator class depends on Components classes)
+
+fan in= n( n classes coming in from components package.)
+
+Thus I= n/(n+n) = n/2n=0.5
+
+Thus D'= |A+I-1|
+D'=|0.5+0.5-1| = 0.
+
+
+Thus for mediator package D'=0.
+
+
+components package:
+
+A=0/n =0 (Since there are no abstract classes involved)
+
+I
+fan out= n (n going out towards IMediator)
+
+fan in= n (n coming in to components package)
+
+Thus I = n/n+n= n/2n =0.5
+
+Thus  D' = |A+I-1| = | 0+0.5-1|=0.5
+
+Thus overall D'= average of two values
+=> (0+0.5)/2=0.25
+
+Thus overall D'=0.25 for the version
+
+----------------------------------------------------------------
+
+Version 4:
+
+mediator package:
+
+A
+no. of abstract classes=1 (IComponents)
+
+=> A=1/2 =0.5
+
+I
+fan out= 0. (nothing going out).
+fan in=n+n = 2n
+
+Thus I=0.
+
+D'=|A+I-1|=0.5+0-1|=0.5
+
+
+
+components package:
+
+A
+ no. of abstract classes=0.
+Total no. of classes=n
+Thus A=0/n=0.
+
+I
+Fan out= n+n=2n(n classes depending on Mediator class and n classes implementing IComponents interface)
+
+fan in=0.
+
+Thus I=2n/2n=1
+
+Thus D'=|A+I-1|=|0+1-1|=0
+
+Thus overall D' value = average of both values.
+
+=(0+0.5)/2=0.25
+
+
+Thus D' value here is 0.25 as well.
+
+
+----------------------------------------------------------------
+
+Version 5
+
+imediator package:
+
+A
+no.of abstract classes=1(IMediator)
+total classes=1
+Thus A=1/1=1
+
+I
+Fan out=0
+Fan in=n+1
+Thus I=0/n+1 =0
+
+Thus D'=|A+I-1|=0+1-1=0
+
+
+mediator package:
+
+A
+no. of abstract classes=0
+total=1
+Thus A=0/1=0.
+
+I
+Fan out=n+1(n towards components and 1 towards imediator package)
+Fan in=0.
+
+Thus I=n+1/n+1 =1
+
+Thus D'=|A+I-1|=|0+1-1|
+
+Thus D'=0.
+
+
+components package:
+
+A
+no. of abstract classes=0.
+total=n
+thus A=0/n=0.
+
+I 
+Fan out=n(going towards imediator package)
+Fan in=n (coming from mediator package)
+
+Thus I=n/n+n=n/2n=0.5
+
+Thus D'=|A+I-1|=0.5
+
+Thus overall D'=(0+0+0.5)/3 => D'=0.167
+
+Thus this design has the least D' compared to all other designs 0.167.
+	
+
+
+
+(f) What design principles did you use in your design. Explain.
+
+All versions idea:
+
+One of the main design principles used in all the designs is the Dependency Inversion Principle. 
+In order to overcome the problems explained in (c), we introduced a new interface (either IComponents or IMediator) to implement the functionalities of the several components in components package or mediator package respectively.
+In all of the designs explained above, the direction of dependency has been reversed in order to improve the
+design and hence we can say that DIP has been followed.
+
+Apart from that, as we implement this design, we can follow all the design principles accordingly.
+
+
+
+In all the above designs, the ripple effect caused in the original design has been removed and hence the design is a lot more efficient than the original design.(This can be said by the fact that there are no more cyclic dependencies in the above design).
+
+
+Also improved in the above designs is the coupling.
+
+
+
+
+
+Also, as seen in (e), the D' value has been considerably reduced in all the designs and specially in the final version, version 5.
+
+Some discussion on versions 1 and 2.
+
+Version 1 is the basic version followed. Although this follows DIP, the D' value still doesn't change. It remains as high as 0.5 which is undesirable.
+
+To make this version better, we go on to implement version 2,(seperating IComponents to a seperate package). This basically reduces the D' value to 0.33 and can be considered a decent design practice but in order to further reduce the D' value, we move on to other versions (As D' is preferred to be around 0-0.25).
+
+
+Some discussion on Version 3:
+Version 3 was basically selected to overcome the major problem in the earlier versions...High D' values. To overcome, the Mediator class implements from the IMediator and this as seen above reduces the D' to 0.25.
+ This can be justified by the fact that we donot know the number of methods inside the Mediator package and it can be a lot more complicated than it looks because of the number of dependencies in the original design.
+This particular design has reduced its responsibilities.
+The design is a lot better than the original one.
+Another advantage of this design is that the instability of both the packages (mediator and components) as shown in the calculations above is neither too high nor too low and stands at 0.5 which is a good design factor as they are neither too rigid nor too instable.
+
+
+
+Some discussion on Version 4
+
+This design basically moved the IComponents interface to the mediator package. This as seen improves the D' value over the versions 1 and 2 which follow almost the same pattern with different packaging. 
+	However, implementing the IComponents interface inside the mediator package is not a good design idea  because the IComponents interface basically is implementing the functionalities of the components and moving it into mediator package basically to reduce the D' value sounds like smelly design.
+
+Some discussion on Version 5:
+
+Version 5, is basically another improvement on version 3 with just the IMediator in a seperate package. The main advantage of this basically over the other design(version 3) is clearly seen in the D' value which has been reduced to 0.16 which is highly desirable.
+
+
+[Total 10pts:] 10 pts
+(a 1 pt):
+(b 1 pts):
+(c 2 pt):
+(d 3 pts)Different design options: 
+(e 2 pts) For different design options:
+(f 1 pts)

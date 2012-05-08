@@ -1,0 +1,133 @@
+Tasks:
+
+	1. Canary Test case - done
+	2. Create Shelf - done
+	3. Test if any slots are empty once shelf is created- done
+	4. Select a letter from the shelf- done
+   	5. Replace a letter into shelf upon selection.-done
+		a. Test to make sure the slot is replaced with a blank before refilling.
+		b. Test to make sure the slot is refilled immediately after selection.
+
+	6. Test for Boundary Value Selection.
+
+	
+	
+ 	Exceptions:
+
+	7. Remove InvalidShelfCapacity Exception -done.
+
+	8. Test for Out of bounds Selection. - done.
+
+-- taskes after Review 2...
+
+	   Suggested Review Tasks
+	8. Remove main after using.-- DONE
+	9. Remove all code from Shelf and start adding just enough to pass the current tests.-- DONE (tried as suggested but still whole code remains and is required)
+	10. Add failure message --DONE
+	11. Reply Venkat about the replaceWithBlank test case.-- DONE 
+	12. Reply Venkat about how "testSelectLetterFromShelf" is different from "testIfAnySlotsAreBlankOnceShelfIsCreated"--- DONE
+	13. Implement Shelf with implemebt it with StringBuilder and see if its better than Character -- DONE
+	15. Rename  "shelf" parameter to "letters"  -DONE
+	16 Rename testIfAnySlotsAreBlankOnceShelfIsCreated to "testShelfFilledOnCreate" --DONE
+	
+	New Tasks
+	
+	17. write CartTest file and start a few test cases.
+	18. Check if cart is blank  on creation -- DONE
+	19. Check if cart is blank on dropping/collecting (basically clearing) -- DONE
+	20. Check if the letter that got added to cart is same as expected -- DONE
+	21. Check for adding letters out of bounds gives exception --DONE
+	22. Test if Spell Checker is running (basically check SpellCheck function for correctness) -- DONE
+	23. Test To Ensure Over Writing Not Allowed --DONE 
+	
+	--Tasks after review 3
+	
+	24. Modify testSelectLetterFromcart to accomodate the comment    -- REVERTED TO VENKAT
+	"You want to check the letter obtained was what you expected. Also
+      check the letter was replaced properly."
+      
+     25. Once above check if following two are really redundant and can be eleminated -- REVERTED TO VENKAT 
+     			--testIfSlotIsBlankedBeforeReFilling()
+     			--testIfSlotIsRefilledImmediatelyAfterSelection()
+     
+     26. 	Review to see which of these methods must be public  -- Depends on replies of about reverts.
+      
+     27. change "aCart" veriable name -- DONE
+     
+     28. Change the ugly code "assertTrue(ch== ' '); to  assertEquals('', ch);" -- DONE
+     
+     29. Change "testIfLetterAddedAsExpected" to make code more clear. --DONE
+     
+     30. Rename isCartAValidWord() to  isWordInCartValid() -- DONE 
+     
+     31. Complete the spell check test case  --DONE
+     
+     Tasks after review 4 
+     
+     32. Restructure the code directories
+      
+     Tasks after review 5
+     
+     32.  Build the project using the Build.xml and AN -- DONE
+     
+     33.  Check the Expected-Actual arguements in all assertEquals in CartTest -- DONE
+     
+     34.  remove testIfSpellCheckerIsCorrect from cart -- DONE 
+     
+     35 remove testIfPalindromeCheckIsCorrect -- DONE
+     
+     36. Split multiple independent asserts into different tests. -- DONE
+     
+     37.  change private StringBuilder letters; to private StringBuilder letters = new StringBuilder("------"); -- DONE
+     
+     38. Remove Constructor from Cart class --DONE
+     
+     39. Clean blankTheCart method --DONE
+     
+     40. Clean up  String tempString = new String(letters.toString()); --DONE
+     
+     41. Think on last point of review 5.--Done	
+     
+     --- New Tasks---
+     
+    42. Write tests for ScoreKeeper and Score Calculator--Done
+    
+    43. Write required code.--Done
+    
+    43. Ask venkat how to go about writing tests for Game class.--Done
+     
+     
+      
+New Tasks
+
+44. Write Test cases for GameController.-Done
+
+	Test to ensure empty cart cannot be discarded.
+	Test if discard cart returns expected score.
+	Test if collect cart returns expected score.
+	Test if collect cart returns expected score for palindrome.
+	Test if collect cart action enabled for valid word.
+	Test if collect cart action disabled for invalid word.
+	Test if letter is inserted into cart at expected position.
+	Test if discarded letter from shelf is scored correctly.
+
+45. Write corresponding methods to make the test cases run.
+
+46. Reformat
+
+47. Design the UI.
+
+48. Run ant and all test cases. Run the application for all possible cases.
+
+
+     
+ 
+     
+     
+     			
+
+	
+	
+	
+	
+

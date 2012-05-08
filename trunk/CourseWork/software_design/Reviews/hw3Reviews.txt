@@ -1,0 +1,40 @@
+05/05/10 05:07 AM CT
+
+Done!
+
+-----------------------------------------------------------------------
+
+05/04/10 08:51 AM CT
+
+2. What is the benefit of making TestWriter an interface?
+
+1. 3. 4. Good.
+
+-----------------------------------------------------------------------
+
+05/03/10 04:40 AM MT
+
+Remove "Answer:" noise.
+
+1. Good
+
+2. Revisit the details about the test classes.
+
+3. Answer above will change this.
+
+4. I don't know such a pattern.
+
+-----------------------------------------------------------------------
+
+05/01/10 04:33 AM IST
+
+1. Explain how, where.
+
+2. This will not work unless you take some extra steps to facilitate
+this.
+
+3. Explain how, where.
+
+4. ?
+
+-----------------------------------------------------------------------
