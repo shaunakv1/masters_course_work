@@ -1,0 +1,58 @@
+Testsuite: SuiteOfTests
+Tests run: 17, Failures: 2, Errors: 0, Time elapsed: 1.532 sec
+------------- Standard Output ---------------
+
+1 row(s) affected
+Enter all the details
+Could not delete row
+Could not delete row
+
+1 row(s) affected
+Deleted row successfully
+Deleted row successfully
+Deleted row successfully
+Deleted row successfully
+
+1(s) row affected
+Not enough parameters
+
+1(s) row affected
+Deleted row successfully
+Could not delete row
+
+1(s) row affected
+------------- ---------------- ---------------
+
+Testcase: testCanary took 0.658 sec
+Testcase: testAddUser took 0.174 sec
+Testcase: testAddUserWithInsufficientDetails took 0.032 sec
+Testcase: testDeleteUser took 0.069 sec
+	FAILED
+expected:<2> but was:<3>
+junit.framework.AssertionFailedError: expected:<2> but was:<3>
+	at user.UserDaoTest.testDeleteUser(Unknown Source)
+	at org.eclipse.ant.internal.ui.antsupport.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)
+	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.run(InternalAntRunner.java:423)
+	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.main(InternalAntRunner.java:137)
+
+Testcase: testDeleteInvalidUser took 0.051 sec
+Testcase: testUpdateUser took 0.055 sec
+Testcase: testFindAUser took 0.02 sec
+	FAILED
+null
+junit.framework.AssertionFailedError: null
+	at user.UserDaoTest.testFindAUser(Unknown Source)
+	at org.eclipse.ant.internal.ui.antsupport.EclipseDefaultExecutor.executeTargets(EclipseDefaultExecutor.java:32)
+	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.run(InternalAntRunner.java:423)
+	at org.eclipse.ant.internal.ui.antsupport.InternalAntRunner.main(InternalAntRunner.java:137)
+
+Testcase: testFindInvalidUser took 0.024 sec
+Testcase: testFindAllUsers took 0.019 sec
+Testcase: testFindAllUsersWithNoUsersInDatabase took 0.057 sec
+Testcase: testFindAllUsersWithNoUsersInDatabase took 0.134 sec
+Testcase: testAddRequest took 0.055 sec
+Testcase: testAddRequestWithInsufficientDetails took 0.019 sec
+Testcase: testDeleteRequest took 0.059 sec
+Testcase: testDeleteInvalidRequest took 0.019 sec
+Testcase: testUpdateRequest took 0.057 sec
+Testcase: testFindAllRequests took 0.017 sec
